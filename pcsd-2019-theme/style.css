@@ -1013,18 +1013,18 @@ link marking
 	background-image:url(../pcsd-2019-theme/assets/icons/external-link-gray.svg);
 }
 #mainContent p a[href*="provo.edu"]:after {
-	display: inline;
+	display: inline-block;
 	background-image:url(../pcsd-2019-theme/assets/icons/file-blue.svg);
 }
 #mainContent p a[href*="pdf"]:after {
-	content:'(PDF) ';
-	display: inline;
+	content:' (PDF)';
+	display: inline-block;
 	background-image: none;
 }
 #mainContent p a[href*="xls"]:after {
-	content:'(XLS) ';
+	content:' (XLS)';
 	background-image: none;
-	display: inline;
+	display: inline-block;
 }
 /* these are so that the listed links have a the right icon once the javascript gives them a class*/
 ul li.int {list-style-image:url(../pcsd-2019-theme/assets/icons/file-blue.png)!important;}
