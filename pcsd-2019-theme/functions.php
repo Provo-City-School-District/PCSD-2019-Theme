@@ -92,7 +92,7 @@ function add_custom_dashboard_widgets() {
 	    $tutorialspage = get_bloginfo( 'url').'/wp-admin/admin.php?page=pcsd_tutorial-admin-page.php';
 	    echo "Check out our new <a href=\"".$tutorialspage."\">Tutorials page</a> for helpful hints on how to accomplish your desired task.";
 	}
-	
+
 /*==========================================================================================
 puts a note on each dashboard page to let content managers how to contact us.
 ============================================================================================*/
@@ -108,7 +108,7 @@ function teacher_default_page_template() {
     $user = wp_get_current_user();
     if ( in_array( 'teacher', (array) $user->roles ) ) { //checks if the users role is "teacher"
 		if ( 'page' == $post->post_type
-        	&& 0 != count( get_page_templates( $post ) ) 
+        	&& 0 != count( get_page_templates( $post ) )
 	        && get_option( 'page_for_posts' ) != $post->ID // Not the page for listing posts
 			&& '' == $post->page_template // Only when page_template is not set
 		) {
@@ -128,9 +128,9 @@ function pcsd_tutorial_admin_page(){
 		$tuts_page = curl_init();
 		// set URL and other appropriate options
 		curl_setopt($tuts_page, CURLOPT_URL, 'https://globalassets.provo.edu/globalpages/tutorials-page.php');
-		curl_setopt($tuts_page, CURLOPT_HEADER, 0);			
+		curl_setopt($tuts_page, CURLOPT_HEADER, 0);
 		// grab URL and pass it to the browser
-		curl_exec($tuts_page);	
+		curl_exec($tuts_page);
 		// close cURL resource, and free up system resources
 		curl_close($tuts_page);
 }
@@ -222,7 +222,7 @@ function custom_breadcrumbs() {
 	         echo '<li class="item-home"><a class="bread-link bread-home" href="' . get_home_url() . '" title="' . $home_title . '">' . $home_title . '</a></li>';
 			 echo '<li class="separator separator-home"> ' . $separator . ' </li>';
         }
-        
+
 
         if ( is_archive() && !is_tax() && !is_category() && !is_tag() ) {
 
@@ -619,7 +619,7 @@ add_filter( 'manage_pages_columns', 'modified_column_register' );
 function modified_column_display( $column_name, $post_id ) {
 	switch ( $column_name ) {
 	case 'Modified':
-		global $post; 
+		global $post;
 	       	echo '<p class="mod-date">';
 	       	echo '<em>'.get_the_modified_date().' '.get_the_modified_time().'</em><br />';
 			echo '<small>' . esc_html__( 'by ', 'show_modified_date_in_admin_lists' ) . '<strong>'.get_the_modified_author().'<strong></small>';
@@ -641,7 +641,7 @@ add_filter( 'manage_edit-page_sortable_columns', 'modified_column_register_sorta
 /* [district_school_year_calendar]
 /*-------------------------------------------------------*/
 
-function district_school_year_calendar_pull() { 
+function district_school_year_calendar_pull() {
 	// create a new cURL resource
 	$schoolyear_cal = curl_init();
 	// set URL and other appropriate options
@@ -664,16 +664,16 @@ add_shortcode('district_school_year_calendar', 'district_school_year_calendar_pu
 /*-------------------------------------------------------*/
 /* [wpb_childpages]
 /*-------------------------------------------------------*/
-function wpb_list_child_pages() { 
-global $post; 
+function wpb_list_child_pages() {
+global $post;
 $parent_id   = $post->post_parent;
 $post_parent_slug = get_post_field( 'post_name', $parent_id );
 	if ( is_page() && $post->post_parent )
 		$childpages = wp_list_pages( 'sort_column=menu_order&title_li=&child_of=' . $post->ID . '&echo=0' );
-		if ( $post->post_parent && $post_parent_slug !=  'teachers-directory' ) { 
-			$childpages = '<li><a href="' . get_permalink( $post->post_parent ) . '">' . get_the_title( $post->post_parent ) . '</a></li>' . $childpages;	  
-		} 
-		if ( $childpages ) {			
+		if ( $post->post_parent && $post_parent_slug !=  'teachers-directory' ) {
+			$childpages = '<li><a href="' . get_permalink( $post->post_parent ) . '">' . get_the_title( $post->post_parent ) . '</a></li>' . $childpages;
+		}
+		if ( $childpages ) {
 			$string = '<ul>' . $childpages . '</ul>';
 		}
 		return $string;
@@ -682,15 +682,15 @@ add_shortcode('wpb_childpages', 'wpb_list_child_pages');
 /*-------------------------------------------------------*/
 /* [wpb_parentpages]
 /*-------------------------------------------------------*/
-function wpb_list_parent_pages() { 
-global $post; 
+function wpb_list_parent_pages() {
+global $post;
 $parent_id   = $post->post_parent;
 $post_parent_slug = get_post_field( 'post_name', $parent_id );
 	if ( is_page() && $post->post_parent )
 		$childpages = wp_list_pages( 'sort_column=menu_order&title_li=&child_of=' . $post->post_parent . '&exclude='.$post->ID .'&echo=0' );
-		if ( $post->post_parent && $post_parent_slug !=  'teachers-directory' ) { 
-			$childpages = '<li><a href="' . get_permalink( $post->post_parent ) . '">' . get_the_title( $post->post_parent ) . '</a></li>' . $childpages;	  
-		} 
+		if ( $post->post_parent && $post_parent_slug !=  'teachers-directory' ) {
+			$childpages = '<li><a href="' . get_permalink( $post->post_parent ) . '">' . get_the_title( $post->post_parent ) . '</a></li>' . $childpages;
+		}
 		if ( $childpages ) {
 			$string = '<ul>' . $childpages . '</ul>';
 		}
@@ -705,22 +705,22 @@ add_shortcode('wpb_parentpages', 'wpb_list_parent_pages');
 
 	//Add the Length column, next to the Title column:
 
-add_filter('manage_post_posts_columns', function ( $columns ) 
+add_filter('manage_post_posts_columns', function ( $columns )
 {
     $_columns = [];
 
     foreach( (array) $columns as $key => $label )
     {
-        $_columns[$key] = $label; 
+        $_columns[$key] = $label;
         if( 'title' === $key )
-            $_columns['wpse_post_content_length'] = __( 'Length' );     
+            $_columns['wpse_post_content_length'] = __( 'Length' );
     }
     return $_columns;
 } );
 
 	//Fill that column with the post content length values:
 
-add_action( 'manage_post_posts_custom_column', function ( $column_name, $post_id ) 
+add_action( 'manage_post_posts_custom_column', function ( $column_name, $post_id )
 {
     if ( $column_name == 'wpse_post_content_length')
         echo mb_strlen( get_post( $post_id )->post_content );
@@ -729,7 +729,7 @@ add_action( 'manage_post_posts_custom_column', function ( $column_name, $post_id
 
 	//Make our Length column orderable:
 
-add_filter( 'manage_edit-post_sortable_columns', function ( $columns ) 
+add_filter( 'manage_edit-post_sortable_columns', function ( $columns )
 {
   $columns['wpse_post_content_length'] = 'wpse_post_content_length';
   return $columns;
@@ -741,10 +741,10 @@ add_filter( 'posts_orderby', function( $orderby, \WP_Query $q )
     $_orderby = $q->get( 'orderby' );
     $_order   = $q->get( 'order' );
 
-    if( 
-           is_admin() 
-        && $q->is_main_query() 
-        && 'wpse_post_content_length' === $_orderby 
+    if(
+           is_admin()
+        && $q->is_main_query()
+        && 'wpse_post_content_length' === $_orderby
         && in_array( strtolower( $_order ), [ 'asc', 'desc' ] )
     ) {
         global $wpdb;
@@ -757,22 +757,22 @@ add_filter( 'posts_orderby', function( $orderby, \WP_Query $q )
 
 	//Add the Length column, next to the Title column:
 
-add_filter('manage_page_posts_columns', function ( $columns ) 
+add_filter('manage_page_posts_columns', function ( $columns )
 {
     $_columns = [];
 
     foreach( (array) $columns as $key => $label )
     {
-        $_columns[$key] = $label; 
+        $_columns[$key] = $label;
         if( 'title' === $key )
-            $_columns['wpse_post_content_length'] = __( 'Length' );     
+            $_columns['wpse_post_content_length'] = __( 'Length' );
     }
     return $_columns;
 } );
 
 	//Fill that column with the post content length values:
 
-add_action( 'manage_page_posts_custom_column', function ( $column_name, $post_id ) 
+add_action( 'manage_page_posts_custom_column', function ( $column_name, $post_id )
 {
     if ( $column_name == 'wpse_post_content_length')
         echo mb_strlen( get_post( $post_id )->post_content );
@@ -781,7 +781,7 @@ add_action( 'manage_page_posts_custom_column', function ( $column_name, $post_id
 
 	//Make our Length column orderable:
 
-add_filter( 'manage_edit-page_sortable_columns', function ( $columns ) 
+add_filter( 'manage_edit-page_sortable_columns', function ( $columns )
 {
   $columns['wpse_post_content_length'] = 'wpse_post_content_length';
   return $columns;
@@ -793,10 +793,10 @@ add_filter( 'posts_orderby', function( $orderby, \WP_Query $q )
     $_orderby = $q->get( 'orderby' );
     $_order   = $q->get( 'order' );
 
-    if( 
-           is_admin() 
-        && $q->is_main_query() 
-        && 'wpse_post_content_length' === $_orderby 
+    if(
+           is_admin()
+        && $q->is_main_query()
+        && 'wpse_post_content_length' === $_orderby
         && in_array( strtolower( $_order ), [ 'asc', 'desc' ] )
     ) {
         global $wpdb;
@@ -852,11 +852,11 @@ function to_title_case( $string ) {
              /* ...first word of the title string... */
              0 === $position ||
              /* ...or not in above lower-case list*/
-             ! in_array( $word, $articles_conjunctions_prepositions ) 
+             ! in_array( $word, $articles_conjunctions_prepositions )
          ) {
              $words[$position] = ucwords( $word );
-         } 
-     }         
+         }
+     }
      /* re-combine word array */
      $string = implode( ' ', $words );
      /* return title string in title case */
@@ -899,7 +899,7 @@ add_action('admin_init', 'yourslug_imagelink_setup', 10);
 function yourslug_imagelink_setup() {
 
     $image_set = get_option( 'image_default_link_type' );
-    
+
     if ($image_set !== 'none') {
         update_option('image_default_link_type', 'none');
     }
@@ -941,9 +941,9 @@ define allowed block types
 =============================================================================================
 */
 add_filter( 'allowed_block_types', 'pcsd_allowed_block_types' );
- 
+
 function pcsd_allowed_block_types( $allowed_blocks ) {
- 
+
   return array(
     'core/paragraph',
     'core/image',

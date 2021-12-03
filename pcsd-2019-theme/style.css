@@ -827,7 +827,7 @@ Sidebar
     font-size: 1em;
     margin-left: 0;
 }
-.imagelist {margin-left: 0;}
+.imagelist {margin-left: 0;list-style: none;}
 .imagelist li img {
 	width: 25px;
 	height: 25px;
@@ -858,13 +858,13 @@ Footer
 	z-index: 1;
 	margin-top: -38px;
 	border-radius: 3px;
-	padding: 0 20px 0 10px;
+	padding: 0 20px 0 0px;
 }
 #teacherAccess .teacherActivate {
 	font-size: 1.2em;
 	padding: 10px 0 10px 10px;
 }
-#teacherAccess a {color: #fff;}
+#teacherAccess a {color: #fff;grid-template-columns: 15% 90%;}
 #teacherAccess ul {display: none;}
 #teacherAccess ul li {font-size: .9em;}
 #teacherAccess ul li a:hover {color: #fc7e02;}
@@ -873,17 +873,20 @@ Footer
 }
 #teacherAccess .employeelink {
 	background-color: #dce3e8;
-	margin-right: -16px;
-	margin-left: -6px;
+	margin-right: -20px;
+	margin-left: 0;
 	padding: 5px 15px 5px 5px;
 	font-family: 'Montserrat', sans-serif;
 }
-#teacherAccess .employeelink img {
-	width: 50px;
-	margin-right: 5px;
-}
 #teacherAccess .employeelink a {
+	grid-template-columns: 10% 90%;
 	color: #02224f;
+	gap: 5%;
+}
+#teacherAccess .employeelink a img{
+	height: auto;
+	margin-top: 5px;
+	margin-left: 5px;
 }
 #mainFooter ul.footerMenu li {
 	float: left;
