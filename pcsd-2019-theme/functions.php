@@ -7,9 +7,9 @@ function theme_specific_stylesheet() {
 	wp_register_script( '404easterEgg', get_template_directory_uri() .'/assets/js/404.js', '', '', true );
 
 	/*   CALL ALL CSS AND SCRIPTS FOR SITE */
-	wp_enqueue_style( 'parent-style', get_stylesheet_uri(), '', '2.0.17', false);
+	wp_enqueue_style( 'parent-style', get_stylesheet_uri(), '', '1.0.1', false);
 	wp_enqueue_script('slick-script', get_template_directory_uri() .'/assets/slick/slick.min.js', array('jquery'), null, true);
-	wp_enqueue_script('my-custom-scripts', get_template_directory_uri() .'/assets/js/scripts.js', array('jquery', 'slick-script',), '1.0.2', true);
+	wp_enqueue_script('my-custom-scripts', get_template_directory_uri() .'/assets/js/scripts.js', array('jquery', 'slick-script',), '1.0.1', true);
 	if ( is_404() ) {
 		wp_enqueue_script( '404easterEgg');
 	}
