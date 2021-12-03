@@ -828,21 +828,10 @@ Sidebar
     margin-left: 0;
 }
 .imagelist {margin-left: 0;}
-.imagelist li {
-	list-style: none;
-	margin-left: 0;
-}
 .imagelist li img {
-    width: 25px;
-    height: 25px;
-    display: inline-block;
-    margin-right: 10px;
-    vertical-align: middle;
-}
-.imagelist li a span {
-    display: inline-block;
-    vertical-align: middle;
-    width: 180px;
+	width: 25px;
+	height: 25px;
+	vertical-align: middle;
 }
 .calendar-agenda a {
 	float: right;
@@ -856,7 +845,8 @@ Sidebar
 .imagelist ~ a {
 	margin-top: 20px;
 	margin-bottom: 15px;
-	display: block;
+	display: grid;
+	grid-template-columns: 20% 80%;
 }
 /*
 ================================================================================================================
