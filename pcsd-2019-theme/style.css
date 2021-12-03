@@ -842,11 +842,11 @@ Sidebar
 	display: block;
 	margin:0;
 }
-.imagelist ~ a {
+.imagelist li a {
 	margin-top: 20px;
 	margin-bottom: 15px;
 	display: grid;
-	grid-template-columns: 20% 80%;
+	grid-template-columns: 10% 90%;
 }
 /*
 ================================================================================================================
