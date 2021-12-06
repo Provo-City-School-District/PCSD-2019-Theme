@@ -833,6 +833,9 @@ Sidebar
 	height: 25px;
 	vertical-align: middle;
 }
+.imagelist li span {
+	padding-top:5px;
+}
 .calendar-agenda a {
 	float: right;
 	margin-top: 20px;
