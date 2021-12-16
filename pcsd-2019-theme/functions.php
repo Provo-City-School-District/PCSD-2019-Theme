@@ -819,12 +819,17 @@ add_filter( 'posts_orderby', function( $orderby, \WP_Query $q )
 /* Converts Post Titles to Camel Case to keep from having obnoxious all caps titles
 /*-------------------------------------------------------*/
 
+function multiexplode ($delimiters,$string) {
 
+    $ready = str_replace($delimiters, $delimiters[0], $string);
+    $launch = explode($delimiters[0], $ready);
+    return  $launch;
+}
 add_filter('the_title', 'to_title_case');
 function to_title_case( $string ) {
      /* Words that should be entirely lower-case */
      $articles_conjunctions_prepositions = array(
-          'a','an','the','but','or','nor','if', 'is' ,'then','else','when','at','by','from','for','in','off','on','out','over','to','into','with', 'of' ,'and',
+          'an','the','but','or','nor','if', 'is' ,'then','else','when','at','by','from','for','in','off','on','out','over','to','into','with', 'of' ,'and',
      );
      /* Words that should be entirely upper-case (need to be lower-case in this list!) */
      $acronyms_and_such = array(
@@ -834,7 +839,7 @@ function to_title_case( $string ) {
 	    'One-A' => 'one-a', 'One-B' => 'one-b', 'DeAnna' => 'deanna', 'SafeUT' => 'safeut'
      );
      /* split title string into array of words */
-     $words = explode( ' ', mb_strtolower( $string ) );
+     $words = multiexplode( array("-", " "), mb_strtolower( $string ) );
      $words = preg_replace('/!+$/', '', $words);
      $words = preg_replace('/¡+$/', '', $words);
      /* iterate over words */
