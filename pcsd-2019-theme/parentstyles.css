@@ -897,7 +897,7 @@ Footer
 	margin-left: 5px;
 }
 #mainFooter ul.footerMenu li {
-	display: inline;
+	float: left;
 	list-style: none;
 }
 #mainFooter ul.footerMenu li a {
@@ -1180,9 +1180,10 @@ low height viewport
 		margin-top: 166px;
 	}
 	#mainFooter {
-		position: relative;
+		position: static;
 		clear: both;
 		padding-top: 5px;
+		height: auto;
 	}
 }
 @media (max-height: 544px) {
