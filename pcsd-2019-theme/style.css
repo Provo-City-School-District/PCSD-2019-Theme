@@ -1018,7 +1018,7 @@ link marking
 	left:-9999px;
 }
 /*For adding icon into for in line links*/
-#mainContent p a:not(.jumper):after {
+#mainContent p a:not(.jumper):not(.fancybox):after {
 	content:' ';
 	display: inline-block;
 	margin-left: 3px;
