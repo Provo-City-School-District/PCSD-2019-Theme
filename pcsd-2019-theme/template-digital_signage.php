@@ -34,8 +34,18 @@
 </head>
 <div class="container">
 <?php
-wp_reset_query();
-$the_query = new WP_Query( array( 'posts_per_page' => 1 , 'post_type'  => array('digital_signage')) );
+	wp_reset_query();
+	$sign_location = get_field('category_select');
+	$the_query = new WP_Query( array(
+		'post_type' => 'digital_signage',          // name of post type.
+		'tax_query' => array(
+			array(
+				'taxonomy' => 'digital_sign_location',   // taxonomy name
+				'field' => 'term_id',           // term_id, slug or name
+				'terms' => $sign_location,                  // term id, term slug or term name
+			)
+		)
+	) );
 	if($the_query->have_posts()) :
 		while ($the_query->have_posts()) : $the_query->the_post();
 
