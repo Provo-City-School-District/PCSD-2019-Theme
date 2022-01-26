@@ -41,7 +41,7 @@ $the_query = new WP_Query( array( 'posts_per_page' => 1 , 'post_type'  => array(
 
 			if(get_field('google_media')) {
 				$url = get_field('google_media');
-				$url = str_replace('/pub?', '/embed?', $url)
+				$url = str_replace(array('/pub?', '/edit?usp=sharing'), '/embed?', $url);
 				?>
 					<iframe src="<?php echo $url ?>" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay" class="responsive-iframe"></iframe>
 				<?php
