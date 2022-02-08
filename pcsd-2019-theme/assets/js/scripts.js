@@ -138,9 +138,21 @@ jQuery(".accordion li").click( function(){
 Auto Link Detection
 =============================================================================================================
 */
-//Removes the icon for the direcotry page
+//first loop to mark list items in the content area
+jQuery('#mainContent ul li a').each(function(){
+  if (jQuery(this).attr('href').match('.pdf')) {
+    jQuery(this).parent().addClass('pdf');
+  } else if(jQuery(this).attr('href').match('.xls')) {
+    jQuery(this).parent().addClass('xls');
+  } else if (jQuery(this).attr('href').match('provo.edu')) {
+    jQuery(this).parent().addClass('int');
+  } else {
+    jQuery(this).parent().addClass('ext');
+  }
+
+});
+
+//Removes the icon for the directory page
 jQuery('#mainContent .personalvCard ul li.int').each(function(){
 	jQuery(this).removeClass('int');
 });
-
-
