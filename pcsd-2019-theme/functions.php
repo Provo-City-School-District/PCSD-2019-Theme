@@ -833,7 +833,7 @@ function to_title_case( $string ) {
      );
      /* Words that should be entirely upper-case (need to be lower-case in this list!) */
      $acronyms_and_such = array(
-         'pcsd', 'cte', 'vi', 'stem', 'ap', 's.t.e.m.', 's.t.e.a.m.', 'pta', 'p.t.a.', 's.t.a.r.', 'usda', 'pe', 'p.e.', 'byu', 'b.y.u.', 'uvu', 'u.v.u.', 'psd', 'act', 'ths', 'phs', 'ihs', 'cms', 'dms', 't.h.s.', 'p.h.s.', 'i.h.s.', 'c.m.s.', 'd.m.s.', 'scc', '(scc)', 'ksl'
+         'pcsd', 'cte', 'vi', 'stem', 'ap', 's.t.e.m.', 's.t.e.a.m.', 'pta', 'p.t.a.', 's.t.a.r.', 'usda', 'pe', 'p.e.', 'byu', 'b.y.u.', 'uvu', 'u.v.u.', 'psd', 'act', 'ths', 'phs', 'ihs', 'cms', 'dms', 't.h.s.', 'p.h.s.', 'i.h.s.', 'c.m.s.', 'd.m.s.', 'scc', '(scc)', 'ksl', 'naep'
      );
      $article_title_exceptions = array(
 	    'One-A' => 'one-a', 'One-B' => 'one-b', 'DeAnna' => 'deanna', 'SafeUT' => 'safeut'
@@ -842,6 +842,7 @@ function to_title_case( $string ) {
      $words = multiexplode( array("-", " "), mb_strtolower( $string ) );
      $words = preg_replace('/!+$/', '', $words);
      $words = preg_replace('/¡+$/', '', $words);
+     //print_r($words);
      /* iterate over words */
      foreach ( $words as $position => $word ) {
          /* re-capitalize acronyms */
@@ -859,7 +860,8 @@ function to_title_case( $string ) {
              /* ...or not in above lower-case list*/
              ! in_array( $word, $articles_conjunctions_prepositions )
          ) {
-             $words[$position] = ucwords( $word );
+            $words[$position] = ucwords( $word );
+
          }
      }
      /* re-combine word array */
