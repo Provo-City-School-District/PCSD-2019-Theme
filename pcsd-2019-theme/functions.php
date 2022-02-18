@@ -174,7 +174,35 @@ function pcsd_media_upload_tips(){
 		<h3>Allowed File types: jpeg, mp3, mp4, pdf, mpeg, png</h3>
 	<?php
 };
+/*==========================================================================================
+Restrict File types allowed to upload
+============================================================================================*/
+/* sources used
+https://wordpress.stackexchange.com/questions/44777/upload-mimes-filter-has-no-effect
+https://bootstrapcreative.com/restrict-certain-file-mime-types-in-wordpress/
+https://wordpress.stackexchange.com/questions/359862/restrict-image-uploads-to-a-certain-file-type
 
+Full list of mime types
+https://codex.wordpress.org/Uploading_Files
+https://www.sitepoint.com/mime-types-complete-list/
+*/
+
+add_filter( 'upload_mimes', 'theme_allowed_mime_types' );
+function theme_allowed_mime_types( $mime_types )
+{
+    $mime_types = array(
+        //document types
+        'pdf' => 'application/pdf',
+        'xls|xlsx' => 'application/excel',
+        //image types
+        'jpg|jpeg' => 'image/jpeg',
+        'png' => 'image/png',
+        //Video/Audio
+        'mp3' => 'audio/mpeg3',
+        'mp4|m4v' => 'video/mpeg'
+    );
+    return $mime_types;
+}
 /*==========================================================================================
 Editor Changes
 ============================================================================================*/
