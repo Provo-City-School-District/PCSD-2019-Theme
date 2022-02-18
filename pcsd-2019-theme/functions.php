@@ -842,6 +842,8 @@ function to_title_case( $string ) {
      $words = multiexplode( array("-", " "), mb_strtolower( $string ) );
      $words = preg_replace('/!+$/', '', $words);
      $words = preg_replace('/¡+$/', '', $words);
+     $words = str_replace('(', '', $words);
+     $words = str_replace(')', '', $words);
      //print_r($words);
      /* iterate over words */
      foreach ( $words as $position => $word ) {
