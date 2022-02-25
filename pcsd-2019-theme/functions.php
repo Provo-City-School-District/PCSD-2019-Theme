@@ -502,7 +502,7 @@ function single_post_count_options() {
 /*==========================================================================================
 // ShortCodes
 ============================================================================================*/
-
+/*
 //For Two Column Layout [TwoColumn-Start]
 function twoColumn_func( $atts ){
     return ' <div class="twoColumn"> ';
@@ -544,7 +544,7 @@ function threeColumn4_func( $atts ){
     return ' </div> ';
 }
 add_shortcode( 'ThreeColumn-Third-Column-End', 'threeColumn4_func' );
-
+*/
 //Display Modified Date [modified-date]
 function modifiedDate_func( $atts ){
     ?>
