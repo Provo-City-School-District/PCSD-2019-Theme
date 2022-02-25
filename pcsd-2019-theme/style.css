@@ -140,6 +140,11 @@ table td {text-align: center;}
 	font-size: .75rem;
 	margin: 5px 0 5px 0;
 }
+/* styles for the shortcode schedule_start_list and schedule_end_list */
+.scheduleList ul li {
+	display:grid;
+	grid-template-columns: 20% 80%;
+}
 @media (max-width: 1170px) {
 	.threeColumn {width: 46%;}
 }
