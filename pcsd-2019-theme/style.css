@@ -143,7 +143,7 @@ table td {text-align: center;}
 /* styles for the shortcode schedule_start_list and schedule_end_list */
 .scheduleList ul li {
 	display:grid;
-	grid-template-columns: 20% 80%;
+	grid-template-columns: minmax(100px, 10%) 90%;
 }
 @media (max-width: 1170px) {
 	.threeColumn {width: 46%;}
