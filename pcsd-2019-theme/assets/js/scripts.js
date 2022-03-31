@@ -139,7 +139,7 @@ Auto Link Detection
 =============================================================================================================
 */
 //first loop to mark list items in the content area
-jQuery('#mainContent ul li a').each(function(){
+jQuery('#mainContent ul li a:not(:has(img))').each(function(){
   if (jQuery(this).attr('href').match('.pdf')) {
     jQuery(this).parent().addClass('pdf');
   } else if(jQuery(this).attr('href').match('.xls')) {
