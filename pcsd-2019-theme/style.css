@@ -1038,7 +1038,7 @@ link marking
 	left:-9999px;
 }
 /*For adding icon into for in line links*/
-#mainContent p a:not(.jumper):after {
+#mainContent p a:not(.jumper):not(:has(img)):after {
 	content:' ';
 	display: inline-block;
 	margin-left: 3px;
@@ -1049,16 +1049,16 @@ link marking
 	background-size:contain;
 	background-image:url(../pcsd-2019-theme/assets/icons/external-link-gray.svg);
 }
-#mainContent p a[href*="provo.edu"]:after {
+#mainContent p a[href*="provo.edu"]:not(:has(img)):after {
 	display: inline-block;
 	background-image:url(../pcsd-2019-theme/assets/icons/file-blue.svg);
 }
-#mainContent p a[href*="pdf"]:after {
+#mainContent p a[href*="pdf"]:not(:has(img)):after {
 	content:' (PDF) ';
 	display: inline;
 	background-image: none;
 }
-#mainContent p a[href*="xls"]:after {
+#mainContent p a[href*="xls"]:not(:has(img)):after {
 	content:' (XLS) ';
 	background-image: none;
 	display: inline;
