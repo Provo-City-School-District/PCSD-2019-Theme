@@ -863,7 +863,8 @@ function multiexplode ($delimiters,$string) {
     $launch = explode($delimiters[0], $ready);
     return  $launch;
 }
-add_filter('the_title', 'to_title_case');
+
+
 function to_title_case( $string ) {
      /* Words that should be entirely lower-case */
      $articles_conjunctions_prepositions = array(
@@ -876,39 +877,45 @@ function to_title_case( $string ) {
      $article_title_exceptions = array(
 	    'One-A' => 'one-a', 'One-B' => 'one-b', 'DeAnna' => 'deanna', 'SafeUT' => 'safeut'
      );
-     /* split title string into array of words */
-     $words = multiexplode( array("-", " "), mb_strtolower( $string ) );
-     $words = preg_replace('/!+$/', '', $words);
-     $words = preg_replace('/¡+$/', '', $words);
-     $words = str_replace('(', '', $words);
-     $words = str_replace(')', '', $words);
-     //print_r($words);
-     /* iterate over words */
-     foreach ( $words as $position => $word ) {
-         /* re-capitalize acronyms */
-         if (in_array( $word, $article_title_exceptions )) {
-	        //echo array_search($word, $article_title_exceptions);
-	         //echo 'test';
-	         //print_r(array_keys($words));
-	         $words[$position] = array_search($word, $article_title_exceptions);
-         } elseif( in_array( $word, $acronyms_and_such )) {
-             $words[$position] = strtoupper( $word );
-         /* capitalize first letter of all other words, if... */
-         } elseif (
-             /* ...first word of the title string... */
-             0 === $position ||
-             /* ...or not in above lower-case list*/
-             ! in_array( $word, $articles_conjunctions_prepositions )
-         ) {
-            $words[$position] = ucwords( $word );
+    if( get_field('title_capitalization_override') == 0){
+      /* split title string into array of words */
+       $words = multiexplode( array("-", " "), mb_strtolower( $string ) );
+       $words = preg_replace('/!+$/', '', $words);
+       $words = preg_replace('/¡+$/', '', $words);
+       $words = str_replace('(', '', $words);
+       $words = str_replace(')', '', $words);
 
-         }
+       /* iterate over words */
+       foreach ( $words as $position => $word ) {
+           /* re-capitalize acronyms */
+           if (in_array( $word, $article_title_exceptions )) {
+            //echo array_search($word, $article_title_exceptions);
+             //echo 'test';
+             //print_r(array_keys($words));
+             $words[$position] = array_search($word, $article_title_exceptions);
+           } elseif( in_array( $word, $acronyms_and_such )) {
+               $words[$position] = strtoupper( $word );
+           /* capitalize first letter of all other words, if... */
+           } elseif (
+               /* ...first word of the title string... */
+               0 === $position ||
+               /* ...or not in above lower-case list*/
+               ! in_array( $word, $articles_conjunctions_prepositions )
+           ) {
+              $words[$position] = ucwords( $word );
+
+           }
+       }
+       /* re-combine word array */
+        $string = implode( ' ', $words );
      }
-     /* re-combine word array */
-     $string = implode( ' ', $words );
+
+
      /* return title string in title case */
      return $string;
 }
+add_filter('the_title', 'to_title_case');
+
 /*==========================================================================================
 Remove fields from Admin profile page
 ============================================================================================*/
