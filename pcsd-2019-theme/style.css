@@ -1195,6 +1195,7 @@ low height viewport
 ================================================================================================================
 */
 @media (max-height: 720px) {
+
 	#contentArea {
 		position: static;
 		float: left;
@@ -1227,7 +1228,7 @@ low height viewport
 	}
 	#mainMenu {
 		position: absolute;
-		top: 100px;
+		top: 100px!important;
 	}
 	.desktop-menu {display: none;}
 	#mainMenu .mobileMenu {
