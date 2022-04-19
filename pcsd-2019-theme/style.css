@@ -483,6 +483,7 @@ page layouts
 	margin: 0 auto;
 	max-width: 1000px;
 	padding-top:5px;
+	padding-left: min(50px, 5%);
 }
 /*
 Post List
