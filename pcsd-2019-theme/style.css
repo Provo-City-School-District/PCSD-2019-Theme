@@ -13,7 +13,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {d
 img {max-width:100%;height:auto;}
 p {margin:20px 0px 20px 0;}
 #mainContent p {margin-left: 10px;}
-strong {font-weight:700;}
+strong {font-weight:700;font-size: 120%;}
 em {font-style:italic;}
 .grecaptcha-badge {display: none;}
 iframe, .powered-by {display:none;}
