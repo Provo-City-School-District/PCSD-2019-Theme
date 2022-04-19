@@ -545,13 +545,6 @@ function threeColumn4_func( $atts ){
 }
 add_shortcode( 'ThreeColumn-Third-Column-End', 'threeColumn4_func' );
 */
-//Display Modified Date [modified-date]
-function modifiedDate_func( $atts ){
-    ?>
-     <p class="lastmodified"><em>Last modified: <?php the_modified_date(); ?></em></p>
-    <?php
-}
-add_shortcode( 'modified-date', 'modifiedDate_func' );
 //[directory url=""]
 
 function directory_func($atts) {
