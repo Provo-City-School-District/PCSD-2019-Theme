@@ -202,8 +202,8 @@ Overall Structural  Styles
 	z-index:0;
 }
 #mainContent {
-	background-color: #fff;
 	padding-bottom: 40px;
+	background-color:var(--white);
 }
 #mainMenu {
 	position: fixed;
