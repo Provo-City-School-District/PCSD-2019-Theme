@@ -865,10 +865,10 @@ function to_title_case( $string ) {
      );
      /* Words that should be entirely upper-case (need to be lower-case in this list!) */
      $acronyms_and_such = array(
-         'pcsd', 'cte', 'vi', 'stem', 'ap', 's.t.e.m.', 's.t.e.a.m.', 'pta', 'p.t.a.', 's.t.a.r.', 'usda', 'pe', 'p.e.', 'byu', 'b.y.u.', 'uvu', 'u.v.u.', 'psd', 'act', 'ths', 'phs', 'ihs', 'cms', 'dms', 't.h.s.', 'p.h.s.', 'i.h.s.', 'c.m.s.', 'd.m.s.', 'scc', '(scc)', 'ksl', 'naep', 'fbla', 'deca', 'sep'
+         'pcsd', 'cte', 'vi', 'stem', 'ap', 's.t.e.m.', 's.t.e.a.m.', 'pta', 'p.t.a.', 's.t.a.r.', 'usda', 'pe', 'p.e.', 'byu', 'b.y.u.', 'uvu', 'u.v.u.', 'psd', 'act', 'ths', 'phs', 'ihs', 'cms', 'dms', 't.h.s.', 'p.h.s.', 'i.h.s.', 'c.m.s.', 'd.m.s.', 'scc', '(scc)', 'ksl', 'naep', 'fbla', 'deca', 'sep', 'd.c.', 'nyc', 'cdc', 'covid', 'covid19', 'covid-19'
      );
      $article_title_exceptions = array(
-	    'One-A' => 'one-a', 'One-B' => 'one-b', 'DeAnna' => 'deanna', 'SafeUT' => 'safeut'
+	    'One-A' => 'one-a', 'One-B' => 'one-b', 'DeAnna' => 'deanna', 'SafeUT' => 'safeut', 'COVID-19' => 'covid-19'
      );
     if( get_field('title_capitalization_override') == 0){
       /* split title string into array of words */
