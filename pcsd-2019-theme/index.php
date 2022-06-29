@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 		<main id="contentArea">
-			<section id="mainContent" class="postgrid newsBlog">
+			<section id="mainContent" class="postgrid newsBlog frontpage">
 				<h1>Timpview News</h1>
 					<?php
 						$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
