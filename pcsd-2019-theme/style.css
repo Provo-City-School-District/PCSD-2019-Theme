@@ -200,6 +200,7 @@ Overall Structural  Styles
 	width:calc(100% - 360px);
 	overflow-y: auto;
 	z-index:0;
+	background-color: var(--secondary-color);
 }
 #mainContent {
 	padding-bottom: 40px;
@@ -235,6 +236,16 @@ Overall Structural  Styles
 	z-index:10;
 	right:0;
 }
+@media (max-width: 750px) {
+	#mainSidebar,#contentArea {
+		position: relative;
+		width:100%
+	}
+	#contentArea {
+		margin-top:0;
+	}
+}
+
 /*================================================================================================================
 Header Styles
 ================================================================================================================*/
@@ -396,8 +407,52 @@ h2 img {
 	.mega-menu .dropDownColumn ul {margin-left: 30px;}
 	.mega-menu .dropDownColumn ul li {margin-left: 0;}
 }
+@media (max-width: 1000px) {
+	#mainHeader h1 {top: 10px;}
+	#mainHeader aside {top:65px;left: 71px;right: auto;}
+	/*#mainHeader .sociallinks,#mainHeader #search-box .search-input, #mainHeader #search-box .search-submit {top:24px;}*/
+	#mainHeader .contactinfo {display:none;}
+}
 @media (max-width: 886px) {
+	.desktop-menu {display: none;}
 	#mainMenu {height: 25px;}
+	#mainMenu {top: 143px;}
+	#mainMenu .mobileMenu {display: block;color: #fff;margin-left: 10px;font-size: 16px;}
+	#reveal-menu[type=checkbox]:checked ~ .mobile-menu {display: block;}
+}
+@media (max-width: 750px) {
+	#mainHeader .sociallinks {display: none;}
+	#mainHeader aside {left: -88px;}
+}
+@media (max-width: 600px) {
+	#mainHeader h1 {
+		position: relative;
+		width: calc(100% - 132px);
+		left: -30px;
+		top: -15px;
+		float: right;
+	}
+	#mainHeader aside {
+		position: relative;
+		top: -4px;
+		left: -30px;
+		right: 0;
+		width: calc(100% - 132px);
+		float: right;
+		margin-top: -40px;
+	}
+	#cludo-search-form {width:100%;position:relative;display:block;}
+	#mainHeader .sociallinks{
+		top:0;
+	}
+	#mainHeader #cludo-search-form .search-input, #mainHeader #cludo-search-form .search-submit {top: 20px;}
+	#mainHeader #cludo-search-form .search-input {
+		width: calc(100% - 35px);
+		left: 0px;
+	}
+	#mainHeader #cludo-search-form .search-submit {
+		right: 0px;
+	}
 }
 @media (max-height: 780px) {
 	.dropDownColumn ul li {
@@ -486,6 +541,7 @@ page layouts
 	padding-left: min(50px, 5%);
 }
 /*
+================================================================================================================
 Post List
 ================================================================================================================
 */
@@ -587,12 +643,16 @@ div.featured-image {
     background-repeat: no-repeat;
     background-size: cover;
 }
+.translationdescriptor {
+	margin-top: 40px;
+}
 @media (min-width: 1400px) {
 	.featured-image-full {
 		padding-top: 0;
 		height: 500px;
 	}
 }
+
 /*
 ================================================================================================================
 News Slider With Tiles
@@ -1086,8 +1146,6 @@ ul li.int {list-style-image:url(../pcsd-2019-theme/assets/icons/file-blue.png)!i
 ul li.pdf {list-style-image:url(../pcsd-2019-theme/assets/icons/pdf.png)!important;}
 ul li.xls {list-style-image:url(../pcsd-2019-theme/assets/icons/xls.png)!important;}
 ul li.ext {list-style-image:url(../pcsd-2019-theme/assets/icons/external-blue.png)!important;}
-/* correct child ul and li that do not get a class to not inherit their parent list style.*/
-ul li.int ul,ul li.pdf ul,ul li.xls ul,ul li.ext ul {list-style-image:none;}
 /*
 ================================================================================================================
 accordion styles
@@ -1214,7 +1272,7 @@ Gallery Page template styles
 low height viewport
 ================================================================================================================
 */
-@media (max-height: 720px) {
+/* @media (max-height: 720px) and (max-width: 600px){
 
 	#contentArea {
 		position: static;
@@ -1232,8 +1290,8 @@ low height viewport
 		padding-top: 5px;
 		height: auto;
 	}
-}
-@media (max-height: 544px) {
+} */
+/* @media (max-height: 544px) {
 	#pcsdBranding {position: static;}
 	#pcsdBranding h1 {
 		margin-top: 7px;
@@ -1266,4 +1324,31 @@ low height viewport
 	}
 	#mainSidebar {margin-top: 18px;}
 
-}
+} */
+/*================================================================================================================
+ skip link styling
+ ================================================================================================================*/
+ a.skip-to-menu, a.skip-to-content, a.skip-translation-link {
+	 left:-999px;
+	 position:absolute;
+	 top:auto;
+	 width:1px;
+	 height:1px;
+	 overflow:hidden;
+	 z-index:-999;
+ }
+ a.skip-to-menu:focus, a.skip-to-menu:active, a.skip-to-content:focus, a.skip-to-content:active, a.skip-translation-link:active, a.skip-translation-link:focus {
+	 color: #fff;
+	 background-color:#000;
+	 left: auto;
+	 top: auto;
+	 width: 20%;
+	 height: auto;
+	 overflow:auto;
+	 margin: 10px 35%;
+	 padding:5px;
+	 border-radius: 15px;
+	 text-align:center;
+	 font-size:1.2em;
+	 z-index:9999;
+ }
