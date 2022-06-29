@@ -9,6 +9,7 @@ function theme_specific_stylesheet() {
 	/*   CALL ALL CSS AND SCRIPTS FOR SITE */
 	wp_enqueue_style( 'parent-style', get_template_directory_uri() .'/style.css', '', '1.0.07', false);
 	wp_enqueue_script('slick-script', get_template_directory_uri() .'/assets/slick/slick.min.js', array('jquery'), null, true);
+	wp_enqueue_style( 'parent-style', get_template_directory_uri() .'/style.css', '', '1.0.01', false);
 	wp_enqueue_script('my-custom-scripts', get_template_directory_uri() .'/assets/js/scripts.js', array('jquery', 'slick-script',), '1.0.02', true);
 	if ( is_404() ) {
 		wp_enqueue_script( '404easterEgg', null, null,true);
