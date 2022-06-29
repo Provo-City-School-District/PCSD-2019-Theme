@@ -208,10 +208,41 @@ Overall Structural  Styles
 	z-index:10;
 	right:0;
 }
+@media (max-width: 750px) {
+	* {border: red;}
+}
 /*================================================================================================================
 Header Styles
 ================================================================================================================*/
-#pcsdBranding img {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* #pcsdBranding img {
 	float: left;
 	margin-right: 10px;
 	margin-left: 20px;
@@ -277,7 +308,7 @@ Header Styles
 }
 #mainHeader .contactinfo li {font-size: 10px;}
 #mainHeader .contactinfo li:first-child {font-size: 10px;}
-#mainHeader .contactinfo li span.phone, #mainHeader .contactinfo li span.fax {margin-left: 17px;}
+#mainHeader .contactinfo li span.phone, #mainHeader .contactinfo li span.fax {margin-left: 17px;} */
 /*
 ================================================================================================================
 Main Menu
@@ -1163,12 +1194,12 @@ Gallery Page template styles
 	border:2px solid #fff;
 }
 .gallery-page .slick-center {border:2px solid #e16c16;}
-/*
-===============================================================================================================
+
+/* ===============================================================================================================
 low height viewport
-================================================================================================================
-*/
-@media (max-height: 720px) {
+================================================================================================================ */
+
+/* @media (max-height: 720px) {
 	#contentArea {
 		position: static;
 		float: left;
@@ -1219,4 +1250,4 @@ low height viewport
 	}
 	#mainSidebar {margin-top: 18px;}
 
-}
+} */
