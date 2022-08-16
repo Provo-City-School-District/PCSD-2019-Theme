@@ -14,7 +14,7 @@ function theme_specific_stylesheet() {
 		wp_enqueue_script( '404easterEgg', null, null,true);
 	}
 }
-add_action('wp_enqueue_scripts', 'theme_specific_stylesheet', 9999);
+add_action('wp_enqueue_scripts', 'theme_specific_stylesheet', 10);
 /*==========================================================================================
 Remove Version Number from WP
 ============================================================================================*/
