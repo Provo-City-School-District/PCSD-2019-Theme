@@ -401,12 +401,26 @@
 			</section>
 		</main>
 		<aside id="mainSidebar" class="teacherSidebar">				
-					<?php
+				
+				<?php
 						if(is_page( 'study-at-home' )) {
 							get_sidebar( $sidebar ); 
 						} else {
 					?>
 								<aside class="syllabus">
+								<h2>Canvas</h2>
+
+ 
+
+<ul>
+
+<li class="int"><a href="https://canvas.provo.edu">Canvas Login</a></li>
+
+<li class="int"><a href="https://provo.edu/wp-content/uploads/2020/08/Canvas-Parent-Guide.pdf">Canvas Parent Guide</a></li>
+
+<li class="int"><a href="https://provo.edu/wp-content/uploads/2020/08/Canvas-Gui?a-para-los-padres.pdf">Canvas – Guía para los padres</a></li>
+
+</ul>
 								<h2>My Web Pages</h2>
 					<?php
 							global $post;

@@ -31,7 +31,20 @@
 		<aside id="mainSidebar" class="teacherSidebar">
 			
 			<aside class="syllabus">
-				<h2>My Web Pages</h2>
+			<h2>Canvas</h2>
+
+ 
+
+<ul>
+
+<li class="int"><a href="https://canvas.provo.edu">Canvas Login</a></li>
+
+<li class="int"><a href="https://provo.edu/wp-content/uploads/2020/08/Canvas-Parent-Guide.pdf">Canvas Parent Guide</a></li>
+
+<li class="int"><a href="https://provo.edu/wp-content/uploads/2020/08/Canvas-Gui?a-para-los-padres.pdf">Canvas – Guía para los padres</a></li>
+
+</ul>	
+			<h2>My Web Pages</h2>
 					<?php
 						global $post;
 						$parent_id   = $post->post_parent;
