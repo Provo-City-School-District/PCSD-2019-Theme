@@ -236,7 +236,8 @@ table td {
 /* styles for the shortcode schedule_start_list and schedule_end_list */
 .scheduleList ul li {
   display: grid;
-  grid-template-columns: minmax(100px, 10%) 90%;
+  grid-template-columns: minmax(100px, 10%) 1fr;
+  gap: 50px;
 }
 @media (max-width: 1170px) {
   .threeColumn {
@@ -1647,8 +1648,8 @@ Gallery Page template styles
 low height viewport
 ================================================================================================================
 */
-@media (max-height: 720px) and (max-width: 600px){
-
+/* @media (max-height: 720px) and (max-width: 600px){ */
+  @media (max-height: 720px){
 	#contentArea {
 		position: static;
 		float: left;
