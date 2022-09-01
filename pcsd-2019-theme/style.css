@@ -236,8 +236,26 @@ table td {
 /* styles for the shortcode schedule_start_list and schedule_end_list */
 .scheduleList ul li {
   display: grid;
-  grid-template-columns: minmax(100px, 10%) 1fr;
-  gap: 50px;
+  /* grid-template-columns: minmax(100px, 10%) 1fr; */
+  grid-template-columns: 1fr;
+  /* gap: 50px; */
+}
+.scheduleList .grid2 {
+  grid-template-columns: 1fr;
+}
+@media(min-width:500px){
+  .scheduleList ul li {
+    grid-template-columns: 1fr max(150px);
+  }
+
+}
+@media(min-width:1100px){
+  .scheduleList ul li {
+    grid-template-columns: 1fr max(200px);
+  }
+  .scheduleList .grid2 {
+    grid-template-columns: repeat(2,1fr);
+  }
 }
 @media (max-width: 1170px) {
   .threeColumn {
