@@ -44,11 +44,11 @@
 								echo '<p>No Content Found</p>';
 					endif;
 					?>
-				</article>
-				<?php
+			<?php
 
-						echo do_shortcode('[social_warfare]');
-				?>
+echo do_shortcode('[social_warfare]');
+?>	
+			</article>
 					<div class="bottom"></div>
 
 			</section>
