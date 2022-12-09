@@ -147,19 +147,12 @@ function pcsd_tutorial_admin_page()
     curl_close($tuts_page);
 }
 /*==========================================================================================
-Tracks User Last Login
+Tracks User Registration
 ============================================================================================*/
-//Log the date when a user logs in
-function user_last_login($user_login, $user)
-{
-    update_user_meta($user->ID, 'last_login', current_time('M j, Y h:i a'));
-}
-add_action('wp_login', 'user_last_login', 10, 2);
-
 //display the time the user logged in on the users screen in the dashboard
 function new_modify_user_table($column)
 {
-    $column['lastLogin'] = 'Last Login';
+    $column['user_registered'] = 'User Registered';
     return $column;
 }
 add_filter('manage_users_columns', 'new_modify_user_table');
@@ -167,8 +160,8 @@ add_filter('manage_users_columns', 'new_modify_user_table');
 function new_modify_user_table_row($val, $column_name, $user_id)
 {
     switch ($column_name) {
-        case 'lastLogin':
-            return get_the_author_meta('last_login', $user_id);
+        case 'user_registered':
+            return get_the_author_meta('user_registered', $user_id);
             break;
         default:
     }
