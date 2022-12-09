@@ -105,7 +105,7 @@ puts a note on each dashboard page to let content managers how to contact us.
 ============================================================================================*/
 function pcsd_change_admin_footer()
 {
-    echo '<span id="footer-note">For any questions don\'t hesitate to contact the District Web Team Rob Francom(robertf@provo.edu), and Josh Espinoza(joshe@provo.edu).</span>';
+    echo '<span id="footer-note">For any questions don\'t hesitate to contact the District Web Team Rob Francom(robertf@provo.edu).</span>';
 }
 add_filter('admin_footer_text', 'pcsd_change_admin_footer');
 /*==========================================================================================
