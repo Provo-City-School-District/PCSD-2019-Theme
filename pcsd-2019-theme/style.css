@@ -340,7 +340,7 @@ Overall Structural  Styles
   position: fixed;
   top: 166px;
   bottom: 45px;
-  width: calc(100% - 360px);
+  width: calc(100% - 310px);
   overflow-y: auto;
   z-index: 0;
   background-color: var(--secondary-color);
@@ -371,7 +371,7 @@ Overall Structural  Styles
   overflow-y: auto;
 }
 #mainSidebar > * {
-  width: calc(100% - 2em);
+  max-width: calc(100% - 2em);
   margin:0 auto;
   display: block;
 }
