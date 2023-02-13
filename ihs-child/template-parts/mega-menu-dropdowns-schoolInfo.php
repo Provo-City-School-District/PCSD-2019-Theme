@@ -47,16 +47,13 @@
 			<?php
 		}	
 	?>
-	
 		<ul>
+			<li class="int"><a href="https://provo.edu/transportation/find-your-bus-route/">Bus Routes</a></li>
+			<li class="int"><a href="https://independence.provo.edu/school-information/community-council/">Community Council</a></li>
 			<li class="int"><a href="https://independence.provo.edu/school-information/contact-our-school/">Contact Our School</a></li>
+			<li class="int"><a href="https://provo.edu/school-fees-22-23/independence-high/">Fee Schedule 2022 - 2023</a></li>
             <li class="int"><a href="https://independence.provo.edu/school-information/hours-of-operation/">Hours of Operation</a></li>
-    <!-- 	<li class="int"><a href="https://independence.provo.edu/about-timpview/school-profile/">School Profile</a></li>
-            <li class="int"><a href="https://independence.provo.edu/about-timpview/achievement-data/">Achievement Data</a></li> -->
-            <li class="int"><a href="https://independence.provo.edu/school-information/community-council/">Community Council</a></li>
-            <li class="int"><a href="https://provo.edu/transportation/find-your-bus-route/">Bus Routes</a></li>
-    <!-- 	<li class="int"><a href="https://independence.provo.edu/timpview-map/">School Map</a></li> -->
-			
+		</ul>	
 </div>
 <div class="dropDownColumn">
 	<?php 
