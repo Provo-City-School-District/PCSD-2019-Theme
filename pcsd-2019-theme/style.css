@@ -1734,7 +1734,7 @@ link marking
 }
 
 /*For adding icon into for in line links*/
-#mainContent p a:after:not(.jumper):not(img) {
+#mainContent p a:not(.jumper):not(img):after {
   content: " ";
   display: inline-block;
   margin-left: 3px;
@@ -1746,18 +1746,18 @@ link marking
   background-image: url(../pcsd-2019-theme/assets/icons/external-link-gray.svg);
 }
 
-#mainContent p a[href*="provo.edu"]:after:not(.jumper):not(img) {
+#mainContent p a[href*="provo.edu"]:not(.jumper):not(img):after {
   display: inline-block;
   background-image: url(../pcsd-2019-theme/assets/icons/file-blue.svg);
 }
 
-#mainContent p a[href*="pdf"]:after:not(.jumper):not(img) {
+#mainContent p a[href*="pdf"]:not(.jumper):not(img):after {
   content: " (PDF) ";
   display: inline;
   background-image: none;
 }
 
-#mainContent p a[href*="xls"]:after:not(.jumper):not(img) {
+#mainContent p a[href*="xls"]:not(.jumper):not(img):after {
   content: " (XLS) ";
   background-image: none;
   display: inline;
