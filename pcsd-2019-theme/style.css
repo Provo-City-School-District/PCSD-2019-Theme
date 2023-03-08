@@ -2148,3 +2148,13 @@ Print Styles
 
   table tr { page-break-before: avoid; }
 }
+
+/* Work order 103281
+Rob Requested the position of the edit link be moved. 
+=========================================================================================*/
+#mainSidebar .simcal-calendar {
+  padding: .5em;
+}
+.calendar-agenda a {
+  float:unset;
+}
