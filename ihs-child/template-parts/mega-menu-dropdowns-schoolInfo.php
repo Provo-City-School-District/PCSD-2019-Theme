@@ -16,6 +16,7 @@
 		<ul>
 			<li class="int"><a href="https://independence.provo.edu/about-timpview/bell-schedule/">Bell Schedule</a></li>
 			<li class="int"><a href="https://independence.provo.edu/school-information/calendar/">School Calendar</a></li>
+			<li class="int"><a href="http://independence.provo.edu/wp-content/uploads/2023/03/ihs-trimester-hex-2022-2023-03312023.pdf">Trimester Hex Dates</a></li>
             <li class="int"><a href="https://independence.provo.edu/school-information/district-calendar/">District Calendar</a></li>
 		</ul>	
 		<?php 

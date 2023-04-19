@@ -12,7 +12,6 @@
 		}	
 	?>
 		<ul>
-			
 			<li class="int"><a href="https://wasatch.provo.edu/calendar/">Wasatch Calendar</a></li>
 			<li class="int"><a href="https://wasatch.provo.edu/district-school-year-calendar/">District Events Calendar</a></li>
 					
@@ -33,6 +32,7 @@
 			<li class="ext"><a href="https://grades.provo.edu/public/">PowerSchool (Grades & Attendance)</a></li>
 			<li class="int"><a href="https://wasatch.provo.edu/faculty-staff/teachers-directory/">Classrooms</a></li>
 			<li class="int"><a href="https://wasatch.provo.edu/school-information/registration/">Registration</a></li>
+			<li class="int"><a href="https://wasatch.provo.edu/watch-dogs/">Watch DOGS</a></li>
 		</ul>	
 	<?php 
 		//checks if this template section is loading into the menu or into the sidebar/content area and assigns the proper heading
@@ -70,7 +70,7 @@
 		<ul>
 			<li class="int"><a href="https://wasatch.provo.edu/school-information/contact-our-school/">Contact Our School</a></li>
             <li class="int"><a href="https://wasatch.provo.edu/school-information/school-hours/">Hours of Operation &amp; Daily Schedule</a></li>
-        <!--    <li class="pdf"><a href="https://wasatch.provo.edu/wp-content/uploads/2018/11/WasatchAchievemntData.pdf">Achievement Data</a></li> -->
+			<li class="int"><a href="https://provo.edu/school-fees-22-23/wasatch/">Fee Schedule 2022 - 2023</a></li>
             <li class="int"><a href="https://wasatch.provo.edu/community-council/">Community Council</a></li>
             <li class="int"><a href="https://provo.edu/transportation/find-your-bus-route/">Bus Routes</a></li>
 			<li class="int"><a href="https://wasatch.provo.edu/school-information/volunteer-opportunities/">Volunteer Opportunities</a></li>

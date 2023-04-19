@@ -50,25 +50,20 @@
 							while ($the_query->have_posts()) : $the_query->the_post();?>
 						   		<article class="post">
 					   				<header class="postmeta">
-						   				<?php 
-							   				if ($post->post_type == "principals_message") { ?>
-							   					<a href="<?php the_permalink(); ?>">
-						   							<div class="featured-image">
-						   								<img src="<?php echo get_theme_file_uri(); ?>/assets/images/principal-message.jpg" alt="Admin photo" class="left" />
-								   					</div>
- 									<?php	} elseif (has_post_thumbnail()) { ?>
-						   						<a href="<?php the_permalink(); ?>">
-						   							<div class="featured-image">
-						   								<?php the_post_thumbnail(); ?>
-								   					</div>
-							   					
-							   		<?php } else { ?>
-								   				<a href="<?php the_permalink(); ?>">
-												   	<div class="featured-image">
-											   			<img src="<?php echo get_stylesheet_directory_uri().'/assets/images/building-image.jpg'; ?>" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" width="217" height="175">
-											   		</div>
-							   					
-							   		<?php }?>
+									   <div class="featured-image">
+							<a href="<?php the_permalink(); ?>">
+								<?php
+								if (get_field('featured_image', $post_id)) {
+								?>
+									<img src="<?php echo get_field('featured_image'); ?>" alt="" class="" /></a>
+						<?php
+								} elseif (has_post_thumbnail()) {
+									the_post_thumbnail();
+								} else { ?>
+							<img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/building-image.jpg'; ?>" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" width="217" height="175">
+						<?php } ?>
+						</a>
+						</div>
 													<h2><?php if ($post->post_type == "principals_message") { echo "Principal's Message - " . get_the_title(); } else { the_title(); } ?></h2>
 								   				</a>
 										<ul>

@@ -54,6 +54,7 @@
 			<li class="int"><a href="https://sunset.provo.edu/school-information/school-profile/">School Profile</a></li>
 			<li class="int"><a href="https://sunset.provo.edu/school-information/contact-our-school/">Contact Our School</a></li>
             <li class="int"><a href="https://sunset.provo.edu/school-information/school-hours/">Hours of Operation &amp; Daily Schedule</a></li>
+			<li class="int"><a href="https://provo.edu/school-fees-22-23/sunset-view/">Fee Schedule 2022 - 2023</a></li>
         <!--    <li class="pdf"><a href="https://sunset.provo.edu/wp-content/uploads/2019/01/01152019-SunsetView-AchievmentData.pdf">Achievement Data</a></li> -->
             <li class="int"><a href="https://sunset.provo.edu/school-information/community-council/">Community Council</a></li>
             <li class="int"><a href="https://provo.edu/transportation/find-your-bus-route/">Bus Routes</a></li>

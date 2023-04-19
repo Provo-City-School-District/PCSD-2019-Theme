@@ -46,14 +46,13 @@
 			<?php
 		}
 	?>
-
 		<ul>
+			<li class="int"><a href="https://provo.edu/transportation/find-your-bus-route/">Bus Routes</a></li>
+			<li class="int"><a href="https://timpview.provo.edu/about-timpview/community-council/">Community Council</a></li>
 			<li class="int"><a href="https://timpview.provo.edu/about-timpview/contact-our-school/">Contact Our School</a></li>
+			<li class="int"><a href="https://provo.edu/school-fees-22-23/timpview-high/">Fee Schedule 2022 - 2023</a></li>
             <li class="int"><a href="https://timpview.provo.edu/about-timpview/hours-of-operation/">Hours of Operation</a></li>
             <li class="int"><a href="https://timpview.provo.edu/about-timpview/school-profile/">School Profile</a></li>
-       <!--     <li class="int"><a href="https://timpview.provo.edu/about-timpview/achievement-data/">Achievement Data</a></li> -->
-            <li class="int"><a href="https://timpview.provo.edu/about-timpview/community-council/">Community Council</a></li>
-            <li class="int"><a href="https://provo.edu/transportation/find-your-bus-route/">Bus Routes</a></li>
             <li class="int"><a href="https://timpview.provo.edu/timpview-map/">School Map</a></li>
 		</ul>
 </div>
@@ -70,7 +69,6 @@
 			<?php
 		}
 	?>
-
 		<ul>
 			<?php
 				$cnmenuhandle = curl_init();

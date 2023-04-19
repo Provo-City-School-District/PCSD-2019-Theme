@@ -61,15 +61,18 @@
 		}
 	?>
 	<ul>
-		<li><a href="http://dixon.provo.edu/wp-content/uploads/2022/02/22-23-Dixon-Course-Description-.pdf">2022-2023 Dixon Course Description</a></li>
-		<li><a href="http://dixon.provo.edu/wp-content/uploads/2022/02/22-23-8th-Registration-Instructions-English.pdf">2022-2023 8th Grade Registration Instructions (English)</a></li>
-		<li><a href="http://dixon.provo.edu/wp-content/uploads/2022/02/22-23-8th-Registration-Instructions-Spanish.pdf">2022-2023 8th Grade Registration Instructions (Spanish)</a></li>
-		<li><a href="http://dixon.provo.edu/wp-content/uploads/2022/02/2022-2023-English-Utah-Immunization-Requirements-for-7th-Grade-.pdf">2022-2023 English Utah Immunization Requirements for 7th Grade</a></li>
-		<li><a href="http://dixon.provo.edu/wp-content/uploads/2022/02/2022-2023-Spanish-Utah-Immunization-Requirements-for-7th-Grade-.pdf">2022-2023 Spanish Utah Immunization Requirements for 7th Grade</a></li>
-		<li><a href="https://dixon.provo.edu/wp-content/uploads/2022/03/2022-2023-English-7th-Grade-Registration-Instructions.pdf">2022-2023 English 7th Grade Registration Instructions</a></li>
-		<li><a href="https://dixon.provo.edu/wp-content/uploads/2022/03/2022-2023-Spanish-7th-Grade-Registration-Instructions.pdf">2022-2023 Spanish 7th Grade Registration Instructions</a></li>
-		<li><a href="https://dixon.provo.edu/wp-content/uploads/2022/03/2022-2023-English-Spanish-7th-Grade-Additional-Information.pdf">2022-2023 English / Spanish 7th Grade Additional Information</a></li>
-		
+		<li><a href="https://dixon.provo.edu/wp-content/uploads/2023/02/dixon-course-description-2023-2024-02142023.pdf">2023-2024 Dixon Course Descriptions</a></li>
+		<h3>7th Grade</h3>
+		<li><a href="https://dixon.provo.edu/wp-content/uploads/2023/03/2023-2024-7th-grade-registration-letter-en-es-03032023.pdf">2023-2024 7th Grade Registration Letter (English & Spanish)</a></li>
+		<li><a href="https://dixon.provo.edu/wp-content/uploads/2023/02/7th-grade-immunization-requirements-2023-2024-en-02142023.pdf ">2023-2024 Utah Immunization Requirements for 7th Grade (English)</a></li>
+		<li><a href="https://dixon.provo.edu/wp-content/uploads/2023/02/7th-grade-immunization-requirements-2023-2024-es-02142023.pdf">2023-2024 Utah Immunization Requirements for 7th Grade (Spanish)</a></li>
+		<li><a href="https://dixon.provo.edu/wp-content/uploads/2023/03/2023-2024-7th-grade-registration-instructions-en-03032023.pdf">2022-2023  7th Grade Registration Instructions (Engilsh)</a></li>
+		<li><a href="https://dixon.provo.edu/wp-content/uploads/2023/03/2023-2024-7th-grade-registration-instructions-es-030320223.pdf">2022-2023 7th Grade Registration Instructions (Spanish)</a></li>
+		<li><a href="https://dixon.provo.edu/wp-content/uploads/2023/03/2023-2024-7th-grade-additional-information-en-es-03032023.pdf">2022-2023 7th Grade Additional Information (English & Spanish)</a></li>
+		<h3>8th Grade</h3>
+		<li><a href="https://dixon.provo.edu/wp-content/uploads/2023/03/2023-2024-8th-grade-registration-letter-en-es-03032023.pdf">2023-2024 8th Grade Registration Letter (English & Spanish)</a></li>
+		<li><a href="https://dixon.provo.edu/wp-content/uploads/2023/02/8th-grade-registration-instructions-02142023.pdf">2023-2024 8th Grade Registration Instructions (English)</a></li>
+		<li><a href="https://dixon.provo.edu/wp-content/uploads/2023/02/8th-grade-registration-instructions-es-02142023.pdf">2023-2024 8th Grade Registration Instructions (Spanish)</a></li>
 	</ul>
 
 </div>

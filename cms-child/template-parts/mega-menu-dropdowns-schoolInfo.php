@@ -51,9 +51,11 @@
 
 	<ul>
 		<li class="int"><a href="https://provo.edu/transportation/find-your-bus-route/">Bus Routes</a></li>
-		<li class="int"><a href="<?php echo get_home_url(); ?>/student-essentials/school-map/">School Map</a></li>
-		<li class="int"><a href="https://grades.provo.edu/public/">PowerSchool (Grades & Attendance)</a></li>
 		<li class="int"><a href="https://provo.edu/departments/technology-support/login-to-canvas/">Canvas Login</a></li>
+		<li class="int"><a href="https://provo.edu/school-fees-22-23/centennial-middle/">Fee Schedule 2022 - 2023</a></li>
+		<li class="int"><a href="https://grades.provo.edu/public/">PowerSchool (Grades & Attendance)</a></li>
+		<li class="int"><a href="<?php echo get_home_url(); ?>/student-essentials/school-map/">School Map</a></li>
+		<li><a href="http://centennial.provo.edu/wp-content/uploads/2023/02/centennial-student-handbook-2023-02232023.pdf">Student Handbook</a></li>
 	</ul>
 
 

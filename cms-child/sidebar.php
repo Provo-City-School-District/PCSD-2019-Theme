@@ -43,7 +43,7 @@
 
 	<section class="calendar-agenda">
 		<h1>Today’s Events</h1>
-		<?php echo do_shortcode('[calendar id="18548"]'); ?>
+		<?php echo do_shortcode('[calendar id="17255"]'); ?>
 		<a href="<?php echo get_home_url(); ?>/student-essentials/calendar/">View School Calendar</a>
 	</section>
 	<section class="buttonAddons">

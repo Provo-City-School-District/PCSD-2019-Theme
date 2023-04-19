@@ -17,7 +17,7 @@
 			<ul>
 				<li class="int"><a href="<?php echo get_home_url(); ?>/faculty-staff/teachers-by-category/#special">Special Education</a></li>
 				<li class="int"><a href="<?php echo get_home_url(); ?>/faculty-staff/teachers-by-category/#speech">Speech/Language</a></li>
-				<li class="int"><a href="<?php echo get_home_url(); ?>/faculty-staff/teachers-by-category/#ot">OT/PT</a></li>
+				<li class="int"><a href="<?php echo get_home_url(); ?>/faculty-staff/teachers-by-category/#ot">Motor</a></li>
 			</ul>
 	</section>	
 			<?php

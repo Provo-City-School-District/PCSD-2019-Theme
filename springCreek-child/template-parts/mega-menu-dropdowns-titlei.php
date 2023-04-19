@@ -15,7 +15,6 @@
 							<li class="int"><a href="https://springcreek.provo.edu/title-i/what-is-title-i/">What is Title I?</a></li>
 							<li class="pdf"><a href="https://springcreek.provo.edu/wp-content/uploads/2018/12/2016-17-Pamphlet-Annual-Title-I-Information-for-Parents.pdf">Annual Title I Information for Parents</a></li>
 							<li class="ext"><a href="https://provo.edu/title-i/">District Title I</a></li>
-							<li class="int"><a href="https://springcreek.provo.edu/title-i/spring-creek-title-i-information-video/">SC Title I Information Video</a></li>
 						</ul>
 						<p>Title I Coordinator: Michelle Blair (michellebl@provo.edu)</p>
 				</div>
@@ -69,9 +68,10 @@
 					?>
 						<ul>
 							<li class="pdf"><a href="https://springcreek.provo.edu/wp-content/uploads/2018/12/Parent-Right-to-Know-EngSpan-.pdf">Parent Right to Know</a></li>
-							<li class="pdf"><a href="https://springcreek.provo.edu/wp-content/uploads/2022/04/SC_FY-21-22-TI-Annual-Meeting-Slides.pdf">Annual Title I Meeting Info</a></li>
-							<li class="pdf"><a href="https://utahschoolgrades.schools.utah.gov/Home/SchoolOverAllPerformance?SchoolID=45549&DistrictID=1222&SchoolNbr=123&SchoolLevel=K8&IsSplitSchool=0&schoolyearendyear=2021">School Report Card</a></li>
+							<li class="pdf"><a href="https://springcreek.provo.edu/wp-content/uploads/2022/11/title-1-annual-meeting-slides-112022.pdf">Annual Title I Meeting Slides</a></li>
+							<li class="int"><a href="https://springcreek.provo.edu/title-i/spring-creek-title-i-information-video/">Annual Title I Meeting Video</a></li>
+							<li class="pdf"><a href="https://utahschoolgrades.schools.utah.gov/School/OverAllPerformance?SchoolID=45549&DistrictID=1222&SchoolNbr=123&SchoolLevel=K8&IsSplitSchool=0&schoolyearendyear=2022">School Report Card</a></li>
 							<li class="ext"><a href="https://public.tableau.com/shared/PBR64BGZQ?:display_count=n&:origin=viz_share_link">Comparable Schools Report</a></li>
-							<li class="pdf"><a href="https://springcreek.provo.edu/wp-content/uploads/2022/04/FY22-Goals-At-A-Glance-Google-Docs.pdf"><span class="hidden">Spring Creek Elementary </span>Goals At A Glance</a></li>
+							<li class="pdf"><a href="https://springcreek.provo.edu/wp-content/uploads/2022/12/spring-creek-title-1-goals-at-a-glance-12012022.pdf"><span class="hidden">Spring Creek Elementary </span>Goals At A Glance</a></li>
 						</ul>
 				</div>

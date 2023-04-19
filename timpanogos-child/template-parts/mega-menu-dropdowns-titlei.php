@@ -13,8 +13,8 @@
 				?>
 				<ul>
 					<li class="int"><a href="https://timpanogos.provo.edu/title-i/what-is-title-i/">What is Title I?</a></li>
-					<li class="pdf"><a href="https://timpanogos.provo.edu/wp-content/uploads/2019/12/19-20-Needs-Assessment.pdf">Needs Assessment</a></li>
-					<li class="pdf"><a href="https://timpanogos.provo.edu/wp-content/uploads/2022/02/Timpanogos-Elementary-School-Improvement-Plan-FY22.pdf">School Improvement Plan</a></li>
+					<li class="pdf"><a href="https://timpanogos.provo.edu/wp-content/uploads/2022/12/timpanogos-needs-assessment-summary-12012022.pdf">Needs Assessment</a></li>
+					<li class="pdf"><a href="https://timpanogos.provo.edu/wp-content/uploads/2022/12/timpanogos-school-improvement-plan-12012022.pdf">School Improvement Plan</a></li>
 				</ul>
 				<p>Title I Coordinator: Kate Pace (KateP@provo.edu)</p>
 			</div>
@@ -69,9 +69,9 @@
 				?>
 				<ul>
 					<li class="pdf"><a href="https://timpanogos.provo.edu/wp-content/uploads/2019/01/01102019-titlei-parent-notification-compliance.pdf">Parent Notification Compliance</a></li>
-					<li class="ext"><a href="https://utahschoolgrades.schools.utah.gov/Home/SchoolOverallPerformance?SchoolID=1234&DistrictID=1222&SchoolNbr=128&SchoolLevel=K8&IsSplitSchool=0&schoolyearendyear=2021">School Report Card</a></li>
+					<li class="ext"><a href="https://utahschoolgrades.schools.utah.gov/School/OverAllPerformance?SchoolID=1234&DistrictID=1222&SchoolNbr=128&SchoolLevel=K8&IsSplitSchool=0&schoolyearendyear=2022">School Report Card</a></li>
 					<li class="pdf"><a href="https://timpanogos.provo.edu/wp-content/uploads/2020/03/Timp-Goals-at-a-Glance.pdf">Goals at a Glance</a></li>
 					<li class="ext"><a href="https://provo.edu/title-i/">District Title I</a></li>
-					<li class="ext"><a href="https://fb.watch/ddTM-6B47j/">Title 1 Annual Meeting for Timpanogos 2021-22 on Facebook</a></li>
+					<li class="ext"><a href="https://timpanogos.provo.edu/title-i/annual-title-i-school-meeting-november-21-2022//">Annual Title I School Meeting - November 21, 2022</a></li>
 				</ul>
 			</div>

@@ -50,10 +50,11 @@
 
 		<ul>
 			<li class="int"><a href="https://provo.edu/transportation/find-your-bus-route/">Bus Routes</a></li>
+			<li class="int"><a href="https://provo.edu/departments/technology-support/login-to-canvas/">Canvas Login</a></li>
+			<li class="int"><a href="https://provo.edu/school-fees-22-23/dixon-middle/">Fee Schedule 2022 - 2023</a></li>
+			<li class="int"><a href="https://grades.provo.edu/public/">PowerSchool (Grades & Attendance)</a></li>
 			<li class="int"><a href="<?php echo get_home_url(); ?>/student-essentials/dixon-map/">School Map</a></li>
 			<li class="int"><a href="https://dixon.provo.edu/wp-content/uploads/2022/10/dixon-student-handbook-2022-23.pdf">Student Handbook</a></li>
-			<li class="int"><a href="https://grades.provo.edu/public/">PowerSchool (Grades & Attendance)</a></li>
-			<li class="int"><a href="https://provo.edu/departments/technology-support/login-to-canvas/">Canvas Login</a></li>
 		</ul>
 	<?php
 		//checks if this template section is loading into the menu or into the sidebar/content area and assigns the proper heading

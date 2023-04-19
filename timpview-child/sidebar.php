@@ -84,7 +84,7 @@
 					</li>
 					<li>
 						<a href="http://www.infofinderi.com/ifi/?cid=PCSD1CX16HAYK">
-							<img src="<?php echo get_template_directory_uri(); ?>/assets/icons/bus-routes.svg" alt="" />
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/icons/bus-lt.svg" alt="" />
 							<span>Bus Routes</span>
 						</a>
 					</li>

@@ -12,7 +12,7 @@
 						}
 					?>
 					<ul>
-						<li><a href="https://centennial.provo.edu/wp-content/uploads/2022/05/Student-Handbook.pdf">Student Handbook</a></li>
+						<li><a href="http://centennial.provo.edu/wp-content/uploads/2023/02/centennial-student-handbook-2023-02232023.pdf">Student Handbook</a></li>
 						<li><a href="<?php echo get_home_url(); ?>/policies-forms/dress-code/">Dress Code</a></li>
 						<li><a href="https://provo.edu/wp-content/uploads/2022/09/4202-Electronic-Reources.pdf">Electronic Resources</a></li>
 					</ul>

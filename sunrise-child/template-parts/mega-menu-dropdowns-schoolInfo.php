@@ -37,9 +37,8 @@
 			<li class="int"><a href="https://sunrise.provo.edu/school-information/contact-our-school/">Contact Our School</a></li>
 			<li class="int"><a href="https://sunrise.provo.edu/school-information/school-profile/">School Profile</a></li>
             <li class="int"><a href="https://sunrise.provo.edu/school-information/school-hours/">Hours of Operation</a></li>
-            <li class="int"><a href="https://sunrise.provo.edu/school-information/registration/">Registration</a></li>
-            <li class="int"><a href="https://sunrise.provo.edu/school-information/drop-off-pick-up/">Drop Off / Pick up Procedure</a></li>
-            <li class="int"><a href="https://sunrise.provo.edu/school-information/volunteer-opportunities/">Volunteer Opportunities</a></li>
+            <li class="int"><a href="https://sunrise.provo.edu/school-information/registration/">Tuition Registration</a></li>
+			<li class="int"><a href="https://sunrise.provo.edu/school-information/special-education-registration/">Special Education Registration</a></li>
             <li class="int"><a href="https://sunrise.provo.edu/school-information/special-education-services-referral-information/">Special Education Services Referral Information</a></li>
 		</ul>
 </div>

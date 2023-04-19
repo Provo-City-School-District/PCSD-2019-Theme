@@ -59,7 +59,7 @@
 					
 					<li>
 						<a href="<?php echo get_home_url(); ?>/school-information/volunteer-opportunities/">
-							<img src="<?php echo get_template_directory_uri(); ?>/assets/icons/bus-routes.svg" alt="" />
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/icons/bus-lt.svg" alt="" />
 							<span>Volunteer Opportunities</span>
 						</a>
 					</li>					

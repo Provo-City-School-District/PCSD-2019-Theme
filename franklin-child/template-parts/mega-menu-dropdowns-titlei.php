@@ -34,8 +34,8 @@
 					?>
 
 					<ul>
-						<li class="pdf"><a href="https://franklin.provo.edu/wp-content/uploads/2021/09/FR_ParentEngagementPolicy_fy22_Eng.pdf">Parent Engagement Policy (English)</a></li>
-						<li class="pdf"><a href="https://franklin.provo.edu/wp-content/uploads/2021/09/FR_ParentEngagementPolicy_fy22_Spa.pdf">Parent Engagement Policy (Spanish)</a></li>
+						<li class="pdf"><a href="https://franklin.provo.edu/wp-content/uploads/2022/12/franklin-parent-engagement-policy-12012022.pdf">Parent Engagement Policy 2022 - 2023</a></li>
+						<li lang="es" class="pdf"><a href="https://franklin.provo.edu/wp-content/uploads/2022/12/franklin-politica-participacion-padres-12012022.pdf">Politica de Participacion de Padres y Familias 2022 - 2023</a></li>
 					</ul>
 					<?php
 					//checks if this template section is loading into the menu or into the sidebar/content area and assigns the proper heading
@@ -51,8 +51,8 @@
 					?>
 
 					<ul>
-						<li class="pdf"><a href="https://franklin.provo.edu/wp-content/uploads/2021/09/FR_ParentCompact_fy22_Eng.pdf">School/Parent Compact (English)</a></li>
-						<li class="pdf"><a href="https://franklin.provo.edu/wp-content/uploads/2021/09/FR_ParentCompact_fy22_Spa.pdf">School/Parent Compact (Spanish)</a></li>
+						<li class="pdf"><a href="https://franklin.provo.edu/wp-content/uploads/2022/12/franklin-school-parent-compact-12012022.pdf">School Parent Family Compact 2022 - 2023</a></li>
+						<li lang="es" class="pdf"><a href="https://franklin.provo.edu/wp-content/uploads/2022/12/franklin-acuerdo-entre-escuela-padres-12012022.pdf">Acuerdo de Franklin Elementary Entre la Escuela los Padres y Las Familias 2022 - 2023</a></li>
 					</ul>
 				</div>
 				<div class="dropDownColumn">
@@ -70,7 +70,7 @@
 					?>
 
 					<ul>
-						<li class="ext"><a href="https://utahschoolgrades.schools.utah.gov/Home/SchoolOverAllPerformance?SchoolID=1226&DistrictID=1222&SchoolNbr=104&SchoolLevel=K8&IsSplitSchool=0">School Report Card</a></li>
+						<li class="ext"><a href="https://utahschoolgrades.schools.utah.gov/School/OverAllPerformance?SchoolID=1226&DistrictID=1222&SchoolNbr=104&SchoolLevel=K8&IsSplitSchool=0&schoolyearendyear=2022">School Report Card</a></li>
 						<li class="int"><a href="https://franklin.provo.edu/title-i/parents-right-to-know/">Parents Right to Know</a></li>
 						<li class="int"><a href="https://provo.edu/title-i/">District Title I</a></li>
 						<li class="pdf"><a href="https://franklin.provo.edu/wp-content/uploads/2020/03/FR_Goals_1page_fy20.pdf"><span class="hidden">Franklin Elementary School </span>Goals At A Glance Fy20</a></li>

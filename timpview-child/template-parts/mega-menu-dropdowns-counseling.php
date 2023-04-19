@@ -37,7 +37,8 @@
 
 	<ul>
 		<li class="int"><a href="https://timpview.provo.edu/counseling-registration/8th-grade-orientation/">8th Grade Orientation</a></li>
-        <li class="int"><a href="https://docs.google.com/document/d/1ZOer0Yg8U-0YD-AIkbo8iAI2tsEUApyPqIXr1hSTsmY/edit?usp=sharing">Course Offerings & Course Catalog</a></li>
+        <li class="int"><a href="https://docs.google.com/document/d/1ZOer0Yg8U-0YD-AIkbo8iAI2tsEUApyPqIXr1hSTsmY/edit?usp=sharing">Course Offerings & Course Catalog 2022 - 2023</a></li>
+		<li class="int"><a href="https://docs.google.com/document/d/1G7btwjxDHRikn9fwf5bhsHRYLQt6qAn0CZuov8PKNrc/">Course Offerings & Course Catalog 2023 - 2024</a></li>
         <li class="ext"><a href="https://provo.aliohost.net:7443/AlioFeePay_PSD/Account/Login">Pay School Fees</a></li>
         <li class="int"><a href="https://timpview.provo.edu/counseling-registration/graduation-planning/">Plan Your Graduation: Start Now</a></li>
         <li class="ext"><a href="https://grades.provo.edu/public/">PowerSchool (Grades & Attendance)</a></li>
