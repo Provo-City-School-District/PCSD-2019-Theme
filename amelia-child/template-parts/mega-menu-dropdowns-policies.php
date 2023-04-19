@@ -12,7 +12,7 @@
 						}	
 					?>
 						<ul>
-							<li class="pdf"><a href="https://amelia.provo.edu/wp-content/uploads/2021/10/ParentHandbook-2021-22.pdf">Parent Handbook</a></li>
+							<li class="pdf"><a href="https://amelia.provo.edu/wp-content/uploads/2022/10/amelia-parent-handbook-2022-2023.pdf">Parent Handbook</a></li>
 							<li class="pdf"><a href="https://provo.edu/wp-content/uploads/2020/08/Policy-3150-Student-Attendance.pdf">3150 Student Attendance</a></li>
 							<li class="pdf"><a href="https://provo.edu/wp-content/uploads/2020/08/Policy-3155-Releasing-Minors-from-School-Attendance.pdf">3155 Releasing Minors from School Attendance</a></li>
 			                <li class="pdf"><a href="https://provo.edu/wp-content/uploads/2020/08/Policy-3310-Safe-Schools-Policy.pdf">3310 Safe Schools</a></li>

@@ -30,10 +30,11 @@
 	}
 	?>
 	<ul>
-		<li class="int"><a href="https://amelia.provo.edu/study-at-home/">Study At Home</a></li>
-		<li class="ext"><a href="https://grades.provo.edu/public/">PowerSchool (Grades & Attendance)</a></li>
 		<li class="int"><a href="https://amelia.provo.edu/faculty-staff/teachers-directory/">Classrooms</a></li>
+		<li class="int"><a href="https://amelia.provo.edu/wp-content/uploads/2022/10/amelia-parent-handbook-2022-2023.pdf">Parent Handbook</a></li>
+		<li class="ext"><a href="https://grades.provo.edu/public/">PowerSchool (Grades & Attendance)</a></li>
 		<li class="ext"><a href="https://www.canyoncreeksoftware.com/scheduler/ut/provo/">SEP Conference Online Scheduler</a></li>
+		<li class="int"><a href="https://amelia.provo.edu/study-at-home/">Study At Home</a></li>
 	</ul>
 	<?php
 	//checks if this template section is loading into the menu or into the sidebar/content area and assigns the proper heading
@@ -80,7 +81,6 @@
 		<li class="int"><a href="https://amelia.provo.edu/school-information/walking-to-school/">Walking to School</a></li>
 		<li class="int"><a href="https://amelia.provo.edu/school-information/before-after-school-program/">Before &amp; After School Program</a></li>
 		<li class="int"><a href="https://amelia.provo.edu/school-information/stem/">STEM Fair</a></li>
-		<li class="int"><a href="https://amelia.provo.edu/wp-content/uploads/2022/10/amelia-parent-handbook-2022-2023.pdf">Parent Handbook</a></li>
 	</ul>
 </div>
 <div class="dropDownColumn">
