@@ -13,7 +13,7 @@
 					?>
 					<ul>
 						<li class="int"><a href="https://provost.provo.edu/title-i/what-is-title-i/">What is Title I?</a></li>
-						<li class="pdf"><a href="https://provost.provo.edu/wp-content/uploads/2019/10/Provost-FY20-SIP-4.pdf">School Improvement Plan</a></li>
+						<li class="pdf"><a href="https://provost.provo.edu/wp-content/uploads/2022/11/provost-school-improvement-plan-fy-23.pdf">School Improvement Plan</a></li>
 					</ul>
 					<p>Title I Coordinator: <a href="https://provo.edu/district-office-directory/email-form/?staff=24663">Email Patricia Blanton</a></p>
 
@@ -33,8 +33,8 @@
 					?>
 
 					<ul>
-						<li class="pdf"><a href="https://provost.provo.edu/wp-content/uploads/2021/10/provost_ParentCompact_fy21_Eng.pdf">School Parent Family Compact (English)</a></li>
-						<li class="pdf"><a href="https://provost.provo.edu/wp-content/uploads/2021/10/PV_ParentCompact_fy22_Spanish.pdf">School Parent Family Compact (Spanish)</a></li>
+						<li class="pdf"><a href="https://provost.provo.edu/wp-content/uploads/2022/11/provost-parent-compact-fy23-eng.pdf">School Parent Family Compact (English)</a></li>
+						<li class="pdf"><a href="https://provost.provo.edu/wp-content/uploads/2022/11/provost-parent-compact-fy23-spa.pdf">School Parent Family Compact (Spanish)</a></li>
 					</ul>
 					<?php
 					//checks if this template section is loading into the menu or into the sidebar/content area and assigns the proper heading
@@ -50,8 +50,8 @@
 					?>
 
 					<ul>
-						<li class="pdf"><a href="https://provost.provo.edu/wp-content/uploads/2021/10/provost_ParentEngagementPolicy_fy21_Eng.pdf">Parent & Family Engagement Policy (English)</a></li>
-						<li class="pdf"><a href="https://provost.provo.edu/wp-content/uploads/2021/10/PV_ParentEngagementPolicy_fy22_Spanish.pdf">Parent & Family Engagement Policy (Spanish)</a></li>
+						<li class="pdf"><a href="https://provost.provo.edu/wp-content/uploads/2022/11/provost-parent-engagement-policy-fy23-eng.pdf">Parent & Family Engagement Policy (English)</a></li>
+						<li class="pdf"><a href="https://provost.provo.edu/wp-content/uploads/2022/11/provost-parent-engagement-policy-fy23-Spa.pdf">Parent & Family Engagement Policy (Spanish)</a></li>
 					</ul>
 
 				</div>
@@ -68,11 +68,10 @@
 					<?php
 					}
 					?>
-
 					<ul>
-						<li class="pdf"><a href="https://provost.provo.edu/wp-content/uploads/2018/12/Title-I-Parent-Right-to-Know-EngSpan.pdf">Title 1 Patrons right to know</a></li>
+						<li class="int"><a href="https://provost.provo.edu/title-i/annual-title-i-meeting-video/">Annual Title I Meeting Video (English)</a></li>
+						<li class="pdf"><a href="https://provost.provo.edu/wp-content/uploads/2018/12/Title-I-Parent-Right-to-Know-EngSpan.pdf">Title I Patron's Right to Know</a></li>
 						<li class="ext"><a href="https://provo.edu/title-i/">District Title I</a></li>
-						<li class="int"><a href="https://utahschoolgrades.schools.utah.gov/home/SchoolAchievement/?StateID=99&SchoolID=1231&DistrictID=1222&SchoolNbr=120&SchoolLevel=K8&IsSplitSchool=0&schoolyearendyear=2021">School Report Card 2020-2021</a></li>
-						<li class="pdf"><a href="https://provost.provo.edu/wp-content/uploads/2020/03/PV_Goals_1page_fy20.pdf"><span class="hidden">Provost Elementary </span>Goals At A Glance Fy20</a></li>
+						<li class="int"><a href="https://utahschoolgrades.schools.utah.gov/School/OverAllPerformance?SchoolID=1231&DistrictID=1222&SchoolNbr=120&SchoolLevel=K8&IsSplitSchool=0&schoolyearendyear=2022">School Report Card</a></li>
 					</ul>
 				</div>
