@@ -50,27 +50,22 @@
 			while ($the_query->have_posts()) : $the_query->the_post(); ?>
 				<article class="post">
 					<header class="postmeta">
-						<div class="featured-image">
-							<a href="<?php the_permalink(); ?>">
+						<a href="<?php the_permalink(); ?>">
+							<div class="featured-image">
+
 								<?php
 								if (get_field('featured_image', $post_id)) {
 								?>
-									<img src="<?php echo get_field('featured_image'); ?>" alt="" class="" /></a>
-						<?php
+									<img src="<?php echo get_field('featured_image'); ?>" alt="" class="" />
+								<?php
 								} elseif (has_post_thumbnail()) {
 									the_post_thumbnail();
 								} else { ?>
-							<img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/building-image.jpg'; ?>" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" width="217" height="175">
-						<?php } ?>
-						</a>
-						</div>
+									<img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/building-image.jpg'; ?>" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" width="217" height="175">
+								<?php } ?>
 
-
-						<h2><?php if ($post->post_type == "principals_message") {
-								echo "Principal's Message - " . get_the_title();
-							} else {
-								the_title();
-							} ?></h2>
+							</div>
+							<h2><?php the_title(); ?></h2>
 						</a>
 						<ul>
 							<li><img src="//globalassets.provo.edu/image/icons/calendar-ltblue.svg" alt="" /><?php the_time(' F jS, Y') ?></li>
