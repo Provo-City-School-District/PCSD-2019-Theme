@@ -23,18 +23,7 @@
 		<link rel="icon" type="image/png" href="<?php echo get_stylesheet_directory_uri().'/assets/favicon/filename'; ?>" sizes="32x32">
 		<link rel="icon" type="image/png" href="<?php echo get_stylesheet_directory_uri().'/assets/favicon/filename'; ?>" sizes="16x16">
 		<!-- Favicon End -->
-		<?php
 		
-		if (has_post_thumbnail()) {
-		?>
-		<meta property="og:image" content="<?php echo get_the_post_thumbnail_url(); ?>" />	
-		<?php
-		} else {
-		?>
-		<meta property="og:image" content="<?php echo get_stylesheet_directory_uri().'/assets/images/building-image.jpg'; ?>" />
-		<?php
-		}
-		?>
 		<?php wp_head(); ?>
 	</head>
 	<body>

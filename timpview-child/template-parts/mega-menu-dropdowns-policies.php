@@ -56,8 +56,8 @@
 							<li class="pdf"><a href="https://timpview.provo.edu/wp-content/uploads/2018/03/ths-Athletic-Area-Rental-Form.pdf">Athletic Area Rental Form</a></li>
 							<li class="pdf"><a href="https://timpview.provo.edu/wp-content/uploads/2018/03/ths-club-application.pdf">Club Application Form</a></li>
 							<li class="pdf"><a href="https://timpview.provo.edu/wp-content/uploads/2018/03/ths-Indoor-Rental-Form.pdf">Indoor Rental Form</a></li>
-							<li class="pdf"><a href="https://provo.edu/wp-content/uploads/2021/07/6160-FeeWaiverApplication7-12.pdf">6160 Form 1 Fee Waiver Application (Grade 7-12)</a></li>
-							<li lang="es" class="pdf"><a href="https://provo.edu/wp-content/uploads/2021/07/6160-FeeWaiverApplication7-12Spanish.pdf">6160 Solicitud de Exoneracion de Cuotas (Grados 7-12)</a></li>
+							<li class="int"><a href="https://provo.edu/school-fees/">Fee Waiver Applications & Information</a></li>
+							
 							
 						</ul>
 				</div>
