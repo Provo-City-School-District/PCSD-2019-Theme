@@ -566,70 +566,41 @@ function schedule_end_func()
     return '</div>';
 }
 add_shortcode('schedule_end_list', 'schedule_end_func');
-/*-------------------------------------------------------*/
-//Menu Splash Page fetchs
-/*-------------------------------------------------------*/
-//[schoolinfo]
-function schoolinfo_func()
-{
-    get_template_part('template-parts/mega-menu-dropdowns', 'schoolInfo');
-}
-add_shortcode('schoolinfo', 'schoolinfo_func');
 
-//[counselingMenu]
-function counselingMenu_func()
+//[cn-menu]
+function cn_global_menu()
 {
-    get_template_part('template-parts/mega-menu-dropdowns', 'counseling');
+    $cnmenuhandle = curl_init();
+    $cnmenuurl = "https://globalassets.provo.edu/globalpages/childNutritionMenu.txt";
+    // Set the url
+    curl_setopt($cnmenuhandle, CURLOPT_URL, $cnmenuurl);
+    // Set the result output to be a string.
+    curl_setopt($cnmenuhandle, CURLOPT_RETURNTRANSFER, true);
+    $cnmenuoutput = curl_exec($cnmenuhandle);
+    // close the curl connection
+    curl_close($cnmenuhandle);
+    return $cnmenuoutput;
+    // return '</div>';
 }
-add_shortcode('counselingMenu', 'counselingMenu_func');
+add_shortcode('cn-menu', 'cn_global_menu');
 
-//[extraCurricularMenu]
-function extraCurricularMenu_func()
+//[cn-sidebar]
+function cn_global_sidebarmenu()
 {
-    get_template_part('template-parts/mega-menu-dropdowns', 'extracurricular');
+    $cnmenuhandle = curl_init();
+    $cnmenuurl = "https://globalassets.provo.edu/globalpages/childNutritionMenu-sidebar.php";
+    // Set the url
+    curl_setopt($cnmenuhandle, CURLOPT_URL, $cnmenuurl);
+    // Set the result output to be a string.
+    curl_setopt($cnmenuhandle, CURLOPT_RETURNTRANSFER, true);
+    $cnmenuoutput = curl_exec($cnmenuhandle);
+    // close the curl connection
+    curl_close($cnmenuhandle);
+    return $cnmenuoutput;
+    // return '</div>';
 }
-add_shortcode('extraCurricularMenu', 'extraCurricularMenu_func');
+add_shortcode('cn-sidebar', 'cn_global_sidebarmenu');
 
-//[policiesMenu]
-function policiesMenu_func()
-{
-    get_template_part('template-parts/mega-menu-dropdowns', 'policies');
-}
-add_shortcode('policiesMenu', 'policiesMenu_func');
-
-//[facultyMenu]
-function facultyMenu_func()
-{
-    get_template_part('template-parts/mega-menu-dropdowns', 'staff');
-}
-add_shortcode('facultyMenu', 'facultyMenu_func');
-//[titleiMenu]
-function titleiMenu_func()
-{
-    get_template_part('template-parts/mega-menu-dropdowns', 'titlei');
-}
-add_shortcode('titleiMenu', 'titleiMenu_func');
-
-//======================school camera images=============================
-/*
-//---------------Edgemont images-------------------
-function ee_camera_code() {
-    	$image = 'https://globalassets.provo.edu/image/construction-images/ee/currentpic.jpg';
-    	$nocacheimage = "$image" . "?" . time();
-    	$url = '<img src=' . $nocacheimage . ' alt' . ' /' . '>';
-    	return $url;
-}
-add_shortcode('ee-construction-image', 'ee_camera_code');
-
-//---------------Provost images-------------------
-function peCameraCode() {
-    	$image = 'https://globalassets.provo.edu/image/construction-images/pe/currentpic.jpg';
-    	$nocacheimage = "$image" . "?" . time();
-    	$url = '<img src=' . $nocacheimage . ' alt' . ' /' . '>';
-    	return $url;
-}
-add_shortcode('pe-construction-image', 'peCameraCode');
-*/
 //disable open in a new tab/window checkbox in TinyMCE
 function disable_open_new_window()
 {
