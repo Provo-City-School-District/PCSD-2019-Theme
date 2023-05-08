@@ -96,10 +96,10 @@
 	<?php
 	}
 	?>
-	<ul>
+	
 		<?php
 		$cnmenuhandle = curl_init();
-		$cnmenuurl = "https://globalassets.provo.edu/globalpages/childNutritionMenu.php";
+		$cnmenuurl = "https://globalassets.provo.edu/globalpages/childNutritionMenu.txt";
 		// Set the url
 		curl_setopt($cnmenuhandle, CURLOPT_URL, $cnmenuurl);
 		// Set the result output to be a string.
@@ -109,7 +109,7 @@
 		curl_close($cnmenuhandle);
 		echo $cnmenuoutput;
 		?>
-	</ul>
+
 	<?php
 	//checks if this template section is loading into the menu or into the sidebar/content area and assigns the proper heading
 	if (is_page('school-information') || in_array(117, get_post_ancestors($post))) {
