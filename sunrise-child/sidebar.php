@@ -32,30 +32,10 @@
 							<span>All Events Calendar</span>
 						</a>
 					</li>
-					<li>
-						<a href="https://www.myschoolbucks.com/">
-							<img src="<?php echo get_template_directory_uri(); ?>/assets/icons/pay-meals.svg" alt="" />
-							<span>Pay For School Meals</span>
-						</a>
-					</li>
-					<li>
-						<a href="https://docs.google.com/forms/d/e/1FAIpQLScxAhg6X4sFgnANbpCW1o5JyV_gfyEKjHBAvnrkaITdqmh65Q/viewform">
-							<img src="<?php echo get_template_directory_uri(); ?>/assets/icons/meal.svg" alt="" />
-							<span>School Meals Order Form (Formulario para el pedido de comidas escolares)</span>
-						</a>
-					</li>
-					<li>
-						<a href="https://www.schoolnutritionandfitness.com/index.php?page=menus&sid=2302081511134871">
-							<img src="<?php echo get_template_directory_uri(); ?>/assets/icons/meal-menu.svg" alt="" />
-							<span>School Meal Menus</span>
-						</a>
-					</li>
-					<li>
-						<a href="https://www.schoollunchapp.com/Terms.aspx?host=provo.schoollunchapp.com&apply=1">
-							<img src="<?php echo get_template_directory_uri(); ?>/assets/icons/apply-for-free-meals.svg" alt="" />
-							<span>Apply for Free &amp; Reduced Meals</span>
-						</a>
-					</li>
+					<?php 
+					//call in Child Nutrition items
+					echo do_shortcode( '[cn-sidebar]' ); 
+					?>
 					
 					<li>
 						<a href="<?php echo get_home_url(); ?>/school-information/volunteer-opportunities/">

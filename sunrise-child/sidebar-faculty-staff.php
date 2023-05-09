@@ -6,21 +6,25 @@
 	</section>
 	<section>
 		<h1>Faculty &amp; Staff</h1>
-			<?php echo do_shortcode( '[facultyMenu]' ); ?>
+		<?php
+		//echo do_shortcode( '[facultyMenu]' ); 
+		$faculty_Menu = get_post(70);
+		echo $faculty_Menu->post_content;
+		?>
 	</section>
 	<?php
-		//ID 66 and 158 are the admin and ESP directory pages
-		if(!is_page(array(66,158))) {
-			?>
-	<section>
-		<h1>Find Your Teacher by Category</h1>
+	//ID 66 and 158 are the admin and ESP directory pages
+	if (!is_page(array(66, 158))) {
+	?>
+		<section>
+			<h1>Find Your Teacher by Category</h1>
 			<ul>
 				<li class="int"><a href="<?php echo get_home_url(); ?>/faculty-staff/teachers-by-category/#special">Special Education</a></li>
 				<li class="int"><a href="<?php echo get_home_url(); ?>/faculty-staff/teachers-by-category/#speech">Speech/Language</a></li>
 				<li class="int"><a href="<?php echo get_home_url(); ?>/faculty-staff/teachers-by-category/#ot">Motor</a></li>
 			</ul>
-	</section>	
-			<?php
-		}	
+		</section>
+	<?php
+	}
 	?>
 </aside>
