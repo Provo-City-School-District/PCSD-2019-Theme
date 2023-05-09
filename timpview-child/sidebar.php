@@ -56,20 +56,7 @@
 							<span>Bell Schedule</span>
 						</a>
 					</li>
-					<?php
-					//calls in the child nutrition sidebar menu
-					$cnmenuhandle = curl_init();
-					$cnmenuurl = "https://globalassets.provo.edu/globalpages/childNutritionMenu-sidebar.php";
-					// Set the url
-					curl_setopt($cnmenuhandle, CURLOPT_URL, $cnmenuurl);
-					// Set the result output to be a string.
-					curl_setopt($cnmenuhandle, CURLOPT_RETURNTRANSFER, true);
-					$cnmenuoutput = curl_exec($cnmenuhandle);
-					// close the curl connection
-					curl_close($cnmenuhandle); 
-					echo $cnmenuoutput;
-					//end child nutrition sidebar menu
-					?>
+					<?= do_shortcode('[cn-sidebar]'); ?>
 					<li>
 						<a href="<?php echo get_home_url(); ?>/attendance-school/">
 							<img src="<?php echo get_template_directory_uri(); ?>/assets/icons/all-events-calendar.svg" alt="" />
