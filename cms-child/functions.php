@@ -81,3 +81,5 @@ function sidebar_func(){
 	   }
 }
 add_shortcode( 'sidebar-control', 'sidebar_func' );
+
+
