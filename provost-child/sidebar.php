@@ -31,19 +31,9 @@
 							<span>All Events Calendar</span>
 						</a>
 					</li>
-					<?php
-					//calls in the child nutrition sidebar menu
-					$cnmenuhandle = curl_init();
-					$cnmenuurl = "https://globalassets.provo.edu/globalpages/childNutritionMenu-sidebar.php";
-					// Set the url
-					curl_setopt($cnmenuhandle, CURLOPT_URL, $cnmenuurl);
-					// Set the result output to be a string.
-					curl_setopt($cnmenuhandle, CURLOPT_RETURNTRANSFER, true);
-					$cnmenuoutput = curl_exec($cnmenuhandle);
-					// close the curl connection
-					curl_close($cnmenuhandle);
-					echo $cnmenuoutput;
-					//end child nutrition sidebar menu
+					<?php 
+					//call in Child Nutrition items
+					echo do_shortcode( '[cn-sidebar]' ); 
 					?>
 					<li>
 						<a href="https://provo.edu/student-services/kindergarten-registration-during-closure/">

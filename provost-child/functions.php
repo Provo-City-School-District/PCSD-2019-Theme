@@ -93,3 +93,42 @@ function sidebar_func()
 	}
 }
 add_shortcode('sidebar-control', 'sidebar_func');
+
+/*-------------------------------------------------------*/
+//Menu Splash Page fetchs
+/*-------------------------------------------------------*/
+//[schoolinfo]
+function schoolinfo_func()
+{
+	// get_template_part('template-parts/mega-menu-dropdowns', 'schoolInfo');
+	$schoolinfo_menu = get_post(117);
+	return $schoolinfo_menu->post_content;
+}
+add_shortcode('schoolinfo', 'schoolinfo_func');
+
+//[policiesMenu]
+function policiesMenu_func()
+{
+	//get_template_part('template-parts/mega-menu-dropdowns', 'policies');
+	$policy_menu = get_post(122);
+	return $policy_menu->post_content;
+}
+add_shortcode('policiesMenu', 'policiesMenu_func');
+
+//[facultyMenu]
+function facultyMenu_func()
+{
+	// get_template_part('template-parts/mega-menu-dropdowns', 'staff');
+	$faculty_Menu = get_post(70);
+	return $faculty_Menu->post_content;
+}
+add_shortcode('facultyMenu', 'facultyMenu_func');
+
+//[titleiMenu]
+function titleiMenu_func()
+{
+	$titleI_menu = get_post(623);
+	return $titleI_menu->post_content;
+	// get_template_part('template-parts/mega-menu-dropdowns', 'titlei');
+}
+add_shortcode('titleiMenu', 'titleiMenu_func');
