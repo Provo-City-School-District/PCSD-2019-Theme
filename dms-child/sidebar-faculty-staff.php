@@ -13,7 +13,7 @@
 	?>
 	<section>
 		<h1>Teachers &amp; Staff</h1>
-			<?php echo do_shortcode( '[facultyMenu]' ); ?>
+		<?= get_post(18419)->post_content; ?>
 	</section>
 	<?php
 		//ID 42740 is Admin Directory. 42744 is the Counseling Directory. 42746 is the ESP directory
