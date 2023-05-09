@@ -5,33 +5,33 @@
 		<li class="droppable"><a href="<?php echo get_home_url(); ?>/school-information/">School Information</a>
 			<div class="mega-menu">
 				<h2>School Information</h2>
-				 <?php get_template_part( 'template-parts/mega-menu-dropdowns', 'schoolInfo'); ?>
+				<?= do_shortcode( get_post(15988)->post_content ); ?>
 			</div>
 		</li>
 		<li class="droppable"><a href="<?php echo get_home_url(); ?>/counseling-registration/" aria-haspopup="true">Counseling &amp; Registration</a>
 			<div class="mega-menu" aria-label="submenu">
 				<h2>Counseling &amp; Registration</h2>
-					<?php get_template_part( 'template-parts/mega-menu-dropdowns', 'counseling'); ?>
+				<?= get_post(15998)->post_content; ?>
 					
 			</div>
 		</li>
 		<li class="droppable"><a href="<?php echo get_home_url(); ?>/extracurricular/" aria-haspopup="true">Extracurricular</a>
 			<div class="mega-menu" aria-label="submenu">
 				<h2>Extracurricular</h2>
-					<?php get_template_part( 'template-parts/mega-menu-dropdowns', 'extracurricular'); ?>
+				<?= get_post(16009)->post_content; ?>
 				
 			</div>
 		</li>
 		<li class="droppable"><a href="<?php echo get_home_url(); ?>/policies-forms/" aria-haspopup="true">Policies &amp; Forms</a>
 			<div class="mega-menu" aria-label="submenu">
 				<h2>Policies &amp; Forms</h2>
-					<?php get_template_part( 'template-parts/mega-menu-dropdowns', 'policies'); ?>
+				<?= get_post(16007)->post_content; ?>
 			</div>
 		</li>
 		<li class="droppable"><a href="<?php echo get_home_url(); ?>/our-teachers-staff/" aria-haspopup="true">Teachers &amp; Staff</a>
 			<div class="mega-menu" aria-label="submenu">
 				<h2>Teachers &amp; Staff</h2>
-					<?php get_template_part( 'template-parts/mega-menu-dropdowns', 'staff'); ?>
+				<?= get_post(16049)->post_content; ?>
 			</div>
 		</li>
 	</ul>

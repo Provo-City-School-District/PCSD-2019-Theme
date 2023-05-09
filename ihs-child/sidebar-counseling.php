@@ -1,4 +1,4 @@
 <aside id="mainSidebar">
 	<h1>Counseling &amp; Registration</h1>
-	<?php echo do_shortcode( '[counselingMenu]' ); ?>
+	<?= get_post(15998)->post_content; ?>
 </aside>

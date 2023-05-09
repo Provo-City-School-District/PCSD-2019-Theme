@@ -1,4 +1,4 @@
 <aside id="mainSidebar">
 	<h1>Extracurricular</h1>
-	<?php echo do_shortcode( '[extraCurricularMenu]' ); ?>
+	<?= get_post(16009)->post_content; ?>
 </aside>

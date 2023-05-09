@@ -14,6 +14,6 @@
 	?>
 	<section>
 		<h1>Teachers &amp; Staff</h1>
-			<?php echo do_shortcode( '[facultyMenu]' ); ?>
+		<?= get_post(16049)->post_content; ?>
 	</section>
 </aside>
