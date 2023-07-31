@@ -340,7 +340,7 @@ Overall Structural  Styles
   position: fixed;
   top: 166px;
   bottom: 45px;
-  width: calc(100% - 310px);
+  width: calc(100% - 320px);
   overflow-y: auto;
   z-index: 0;
   background-color: var(--secondary-color);
