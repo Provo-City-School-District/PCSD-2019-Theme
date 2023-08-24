@@ -28,7 +28,7 @@
 				<li class="int"><a href="<?php echo get_home_url(); ?>/faculty-staff/teachers-by-category/#Fifth">Fifth Grade</a></li>
 				<li class="int"><a href="<?php echo get_home_url(); ?>/faculty-staff/teachers-by-category/#Sixth">Sixth Grade</a></li>
 				<li class="int"><a href="<?php echo get_home_url(); ?>/faculty-staff/teachers-by-category/#Enrichment">School Enrichment</a></li>
-				<!-- <li class="int"><a href="<?php echo get_home_url(); ?>/faculty-staff/teachers-by-category/#Sped">Special Education</a></li> -->
+				<li class="int"><a href="<?php echo get_home_url(); ?>/faculty-staff/teachers-by-category/#Sped">Special Education</a></li>
 			</ul>
 	</section>		
 			<?php

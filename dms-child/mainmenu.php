@@ -5,7 +5,11 @@
 		<li class="droppable"><a href="<?php echo get_home_url(); ?>/student-essentials/">Student Essentials</a>
 			<div class="mega-menu">
 				<h2>Student Essentials</h2>
-				<?= get_post(18322)->post_content; ?>
+				
+				<?php
+				$schoolinfo_menu = get_post(18322);
+				echo do_shortcode($schoolinfo_menu->post_content);
+				?>
 			</div>
 		</li>
 		<li class="droppable"><a href="<?php echo get_home_url(); ?>/counseling-registration/" aria-haspopup="true">Counseling &amp; Registration</a>

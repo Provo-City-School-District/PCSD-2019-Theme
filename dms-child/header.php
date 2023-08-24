@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html <?php language_attributes();?>>
 	<head>
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-			<script async src="https://www.googletagmanager.com/gtag/js?id=UA-59126000-1"></script>
-			<script>
-			  window.dataLayer = window.dataLayer || [];
-			  function gtag(){dataLayer.push(arguments);}
-			  gtag('js', new Date());
-
-			  gtag('config', 'UA-59126000-1');
-			</script>
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-EL8LKJ5C22"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+		
+		  gtag('config', 'G-EL8LKJ5C22');
+		</script>
 
 
 		<meta charset="utf-8" />
