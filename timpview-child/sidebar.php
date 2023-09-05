@@ -70,6 +70,12 @@
 						</a>
 					</li>
 					<li>
+						<a href="https://provo.edu/departments/technology-support/">
+							<img src="https://globalassets.provo.edu/image/icons/tech-2-lt.svg" alt="" />
+							<span>Student Chromebook Help</span>
+						</a>
+					</li>
+					<li>
 						<a href="http://www.infofinderi.com/ifi/?cid=PCSD1CX16HAYK">
 							<img src="<?php echo get_template_directory_uri(); ?>/assets/icons/bus-lt.svg" alt="" />
 							<span>Bus Routes</span>
