@@ -153,6 +153,9 @@ jQuery('#mainContent ul li a:not(:has(img))').each(function(){
 });
 
 //Removes the icon for the directory page
-jQuery('#mainContent .personalvCard ul li.int').each(function(){
+jQuery('#mainContent .personalvCard ul li').each(function(){
 	jQuery(this).removeClass('int');
+  jQuery(this).removeClass('ext');
+  jQuery(this).removeClass('xls');
+  jQuery(this).removeClass('pdf');
 });
