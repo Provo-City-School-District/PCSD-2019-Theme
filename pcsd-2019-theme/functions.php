@@ -517,38 +517,13 @@ function twoColumn3_func($atts)
     return ' </div></div> ';
 }
 add_shortcode('TwoColumn-Second-Column-End', 'twoColumn3_func');
-/*
-//For Three Column Layout [ThreeColumn-Start]
-function threeColumn_func( $atts ){
-    return ' <div class="threeColumn"> ';
-}
-add_shortcode( 'ThreeColumn-Start', 'threeColumn_func' );
 
-//For Three Column Layout [ThreeColumn-First-Column-End]
-function threeColumn2_func( $atts ){
-    return ' </div><div class="threeColumn"> ';
-}
-add_shortcode( 'ThreeColumn-First-Column-End', 'threeColumn2_func' );
-
-//For Three Column Layout [ThreeColumn-Second-Column-End]
-function threeColumn3_func( $atts ){
-    return ' </div><div class="threeColumn"> ';
-}
-add_shortcode( 'ThreeColumn-Second-Column-End', 'threeColumn3_func' );
-
-//For Three Column Layout [ThreeColumn-Third-Column-End]
-function threeColumn4_func( $atts ){
-    return ' </div> ';
-}
-add_shortcode( 'ThreeColumn-Third-Column-End', 'threeColumn4_func' );
-*/
 //[directory url=""]
 
 function directory_func($atts)
 {
     $category = shortcode_atts(array(
         'url' => 'something',
-        //'bar' => 'something else',
     ), $atts);
     $directory_url = "{$category['url']}";
     return file_get_contents($directory_url);
