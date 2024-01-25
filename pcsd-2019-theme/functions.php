@@ -525,8 +525,14 @@ function directory_func($atts)
     $category = shortcode_atts(array(
         'url' => 'something',
     ), $atts);
+  
     $directory_url = "{$category['url']}";
-    return file_get_contents($directory_url);
+    
+    $contents = file_get_contents($directory_url);
+    //wrap the contents with the appropriate container
+    $contents = '<div class="staff-member-listing">'.$contents.'</div>';
+
+    return $contents;
 }
 add_shortcode('directory', 'directory_func');
 //[schedule_start_list]
@@ -542,6 +548,7 @@ function schedule_end_func()
 }
 add_shortcode('schedule_end_list', 'schedule_end_func');
 
+//====================================== Child Nutrition Menu Pulls ======================================
 //[cn-menu]
 function cn_global_menu()
 {
