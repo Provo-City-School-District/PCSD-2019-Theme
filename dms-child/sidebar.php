@@ -38,6 +38,12 @@
 					<span>Dixon Middle School History</span>
 				</a>
 			</li>
+			<li>
+				<a href="https://reportcard.schools.utah.gov/School/OverAllPerformance?SchoolID=1238&DistrictID=1222&SchoolNbr=408&SchoolLevel=K8&IsSplitSchool=0&schoolyearendyear=2023">
+					<img src="https://globalassets.provo.edu/image/icons/policies-lt.svg" alt="" />
+					<span>School Report Card</span>
+				</a>
+			</li>
 		</ul>
 	</section>
 

@@ -2,7 +2,7 @@
 			<section class="calendar-agenda">
 				<h1>Today’s Events</h1>				
 				<?php echo do_shortcode('[calendar id="172"]'); ?>
-				<a href="<?php echo get_home_url(); ?>/school-information/calendar/">View All School Events Calendar</a>
+				<a href="<?php echo get_home_url(); ?>/school-information/calendar/">Sunset View Elementary School Calendar (Month View)</a>
 			</section>
 			<section>
 				<h1>Parent Resources</h1>
@@ -29,13 +29,7 @@
 					<li>
 						<a href="<?php echo get_home_url(); ?>/faculty-staff/teachers-directory/">
 							<img src="<?php echo get_template_directory_uri(); ?>/assets/icons/find-your-teacher.svg" alt="" />
-							<span>Classrooms</span>
-						</a>
-					</li>
-					<li>
-						<a href="<?php echo get_home_url(); ?>/school-information/all-events-calendar/">
-							<img src="<?php echo get_template_directory_uri(); ?>/assets/icons/all-events-calendar.svg" alt="" />
-							<span>All Events Calendar</span>
+							<span>Find Your Teacher</span>
 						</a>
 					</li>
 					<li>
@@ -52,6 +46,18 @@
 						<a href="https://sunset.provo.edu/school-information/parent-dictionary/">
 							<img src="<?php echo get_template_directory_uri(); ?>/assets/icons/apply-for-free-meals.svg" alt="" />
 							<span>Parent Dictionary</span>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.schools.utah.gov/curr/parentguides">
+							<img src="https://globalassets.provo.edu/image/icons/policies-lt.svg" alt="" />
+							<span>USBE Parent Guides to Student Success</span>
+						</a>
+					</li>
+					<li>
+						<a href="https://reportcard.schools.utah.gov/School/OverAllPerformance?SchoolID=1233&DistrictID=1222&SchoolNbr=124&SchoolLevel=K8&IsSplitSchool=0&schoolyearendyear=2023">
+							<img src="https://globalassets.provo.edu/image/icons/policies-lt.svg" alt="" />
+							<span>School Report Card</span>
 						</a>
 					</li>
 				</ul>

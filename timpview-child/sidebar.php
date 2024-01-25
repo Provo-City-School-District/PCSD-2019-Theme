@@ -3,9 +3,6 @@
 				<h1>Mission &amp; Vision</h1>
 					<p>The mission and vision of Timpview High School is to empower every student to become college, career, and life ready by embracing growth, inclusion, and excellence. </p>				
 			</section>
-			
-
-			
 			<section class="calendar-agenda">	
 				<h1>Today’s Events</h1>
 				<?php echo do_shortcode('[calendar id="42982"]'); ?>
@@ -33,7 +30,7 @@
 						</a>
 					</li>
 					<li>
-						<a href="https://provo.aliohost.net:7443/AlioFeePay_PSD/Account/Login">
+						<a href="https://provo.erplinq.com/FeePay_PSD/Account/Login">
 							<img src="<?php echo get_template_directory_uri(); ?>/assets/icons/pay-meals.svg" alt="" />
 							<span>Pay School Fees</span>
 						</a>
@@ -45,7 +42,7 @@
 						</a>
 					</li>
 					<li>
-						<a href="https://timpview.provo.edu/wp-content/uploads/2021/07/THS-21-22-Odd-Even-Calendar.pdf">
+						<a href="https://timpview.provo.edu/wp-content/uploads/2023/08/a-b-calendar-2023-2024-03042023.pdf">
 							<img src="<?php echo get_template_directory_uri(); ?>/assets/icons/odd-even-calendar.svg" alt="" />
 							<span>A/B Calendar</span>
 						</a>
@@ -79,6 +76,18 @@
 						<a href="http://www.infofinderi.com/ifi/?cid=PCSD1CX16HAYK">
 							<img src="<?php echo get_template_directory_uri(); ?>/assets/icons/bus-lt.svg" alt="" />
 							<span>Bus Routes</span>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.schools.utah.gov/curr/parentguides">
+							<img src="https://globalassets.provo.edu/image/icons/policies-lt.svg" alt="" />
+							<span>USBE Parent Guides to Student Success</span>
+						</a>
+					</li>
+					<li>
+						<a href="https://reportcard.schools.utah.gov/School/OverAllPerformance?SchoolID=1249&DistrictID=1222&SchoolNbr=712&SchoolLevel=HS&IsSplitSchool=0&schoolyearendyear=2023">
+							<img src="https://globalassets.provo.edu/image/icons/policies-lt.svg" alt="" />
+							<span>School Report Card</span>
 						</a>
 					</li>
 				</ul>

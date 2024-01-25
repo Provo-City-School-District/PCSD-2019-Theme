@@ -2,7 +2,7 @@
 			<section class="calendar-agenda">
 				<h1>Today’s Events</h1>				
 				<?php echo do_shortcode('[calendar id="172"]'); ?>
-				<a href="<?php echo get_home_url(); ?>/calendar/">View All School Events Calendar</a>
+				<a href="<?php echo get_home_url(); ?>/calendar/">Amelia Earhart Elementary School Calendar (Month View)</a>
 			</section>
 			<section>
 				<h1>Parent Resources</h1>
@@ -29,16 +29,9 @@
 					<li>
 						<a href="<?php echo get_home_url(); ?>/faculty-staff/teachers-directory/">
 							<img src="<?php echo get_template_directory_uri(); ?>/assets/icons/find-your-teacher.svg" alt="" />
-							<span>Classrooms</span>
+							<span>Find Your Teacher</span>
 						</a>
 					</li>
-					<li>
-						<a href="<?php echo get_home_url(); ?>/all-events-calendar/">
-							<img src="<?php echo get_template_directory_uri(); ?>/assets/icons/all-events-calendar.svg" alt="" />
-							<span>All Events Calendar</span>
-						</a>
-					</li>
-
 					<?php 
 					//call in Child Nutrition items
 					echo do_shortcode( '[cn-sidebar]' ); 
@@ -53,6 +46,18 @@
 						<a href="https://www.canyoncreeksoftware.com/scheduler/ut/provo/">
 							<img src="<?php echo get_template_directory_uri(); ?>/assets/icons/odd-even-calendar.svg" alt="" />
 							<span>SEP Conference Online Scheduler</span>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.schools.utah.gov/curr/parentguides">
+							<img src="https://globalassets.provo.edu/image/icons/policies-lt.svg" alt="" />
+							<span>USBE Parent Guides to Student Success</span>
+						</a>
+					</li>
+					<li>
+						<a href="https://reportcard.schools.utah.gov/School/OverAllPerformance?SchoolID=1224&DistrictID=1222&SchoolNbr=100&SchoolLevel=K8&IsSplitSchool=0&schoolyearendyear=2023">
+							<img src="https://globalassets.provo.edu/image/icons/policies-lt.svg" alt="" />
+							<span>School Report Card</span>
 						</a>
 					</li>
 				</ul>

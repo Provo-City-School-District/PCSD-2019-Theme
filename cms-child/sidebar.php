@@ -38,6 +38,12 @@
 					<span>Mission & Vision</span>
 				</a>
 			</li>
+			<li>
+				<a href="https://reportcard.schools.utah.gov/School/OverAllPerformance?SchoolID=1237&DistrictID=1222&SchoolNbr=404&SchoolLevel=K8&IsSplitSchool=0&schoolyearendyear=2023">
+					<img src="https://globalassets.provo.edu/image/icons/policies-lt.svg" alt="" />
+					<span>School Report Card</span>
+				</a>
+			</li>
 		</ul>
 	</section>
 
