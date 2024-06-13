@@ -525,12 +525,12 @@ function directory_func($atts)
     $category = shortcode_atts(array(
         'url' => 'something',
     ), $atts);
-  
+
     $directory_url = "{$category['url']}";
-    
+
     $contents = file_get_contents($directory_url);
     //wrap the contents with the appropriate container
-    $contents = '<div class="staff-member-listing">'.$contents.'</div>';
+    $contents = '<div class="staff-member-listing">' . $contents . '</div>';
 
     return $contents;
 }
