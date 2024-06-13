@@ -547,7 +547,22 @@ function schedule_end_func()
     return '</div>';
 }
 add_shortcode('schedule_end_list', 'schedule_end_func');
-
+// [get_teacher_access_menu]
+function get_teacher_access_menu()
+{
+    echo '<ul class="imagelist">';
+    // create a new cURL resource
+    $get_teacher_access_menu = curl_init();
+    // set URL and other appropriate options
+    curl_setopt($get_teacher_access_menu, CURLOPT_URL, 'https://globalassets.provo.edu/globalpages/teacher_access_menu.php');
+    curl_setopt($get_teacher_access_menu, CURLOPT_HEADER, 0);
+    // grab URL and pass it to the browser
+    curl_exec($get_teacher_access_menu);
+    // close cURL resource, and free up system resources
+    curl_close($get_teacher_access_menu);
+    echo '</ul>';
+}
+add_shortcode('get_teacher_access_menu', 'get_teacher_access_menu');
 //====================================== Child Nutrition Menu Pulls ======================================
 //[cn-menu]
 function cn_global_menu()
