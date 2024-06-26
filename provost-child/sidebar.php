@@ -53,6 +53,12 @@
 							<span>School Report Card</span>
 						</a>
 					</li>
+					<li>
+						<a href="https://provost.provo.edu/school-information/great-brain-projects/">
+							<img src="https://globalassets.provo.edu/image/icons/classroom.svg" alt="" />
+							<span>Great Brain Projects</span>
+						</a>
+					</li>
 				</ul>
 				<a href="https://www.peachjar.com/index.php?region=33075&a=28&b=138"><img src="https://provost.provo.edu/wp-content/uploads/2019/05/button-orange-eflyers_202x46.png" alt="Link to PeachJar Fliers"></a>
 				<a href="https://safeut.med.utah.edu/"><img src="https://provost.provo.edu/wp-content/uploads/2019/02/safeUTcrisisline.jpg" alt="Link to SafeUT information"></a>

@@ -488,10 +488,12 @@ Content Area
 	}
 }
 */
-#mainSidebar,#contentArea {
-		top: 175px;
+#mainSidebar,
+#contentArea {
+	top: 175px;
 
-	}
+}
+
 /* @media (max-width: 885px) {
 
 	#mainSidebar,
@@ -602,4 +604,16 @@ a.skip-to-content:active {
 	text-align: center;
 	font-size: 1.2em;
 	z-index: 9999;
+}
+
+/*================================================================================================================
+ TranslatePress Menu
+ ================================================================================================================*/
+#trp-floater-ls-current-language .trp-ls-disabled-language img {
+	max-width: 25px;
+	max-width: 25px;
+}
+
+.trp-language-switcher-container.trp-floater-ls-names.trp-top-right.trp-color-dark {
+	min-width: 25px;
 }

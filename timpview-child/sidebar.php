@@ -42,7 +42,7 @@
 						</a>
 					</li>
 					<li>
-						<a href="https://timpview.provo.edu/wp-content/uploads/2023/08/a-b-calendar-2023-2024-03042023.pdf">
+						<a href="https://timpview.provo.edu/wp-content/uploads/2024/01/a-b-calendar-2023-2024-01312024.pdf">
 							<img src="<?php echo get_template_directory_uri(); ?>/assets/icons/odd-even-calendar.svg" alt="" />
 							<span>A/B Calendar</span>
 						</a>
