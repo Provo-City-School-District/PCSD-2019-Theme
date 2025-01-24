@@ -2,7 +2,7 @@
 	Theme Name: Provo City School District 2019
 	Author: District Web Team
 	Author URI: https://employee.provo.edu/technology/
-	Version: 1.0.5-1
+	Version: 1.0.6
 */
 /*================================================================================================================
 Variables
@@ -69,6 +69,7 @@ iframe,
   top: auto;
   bottom: 0;
 }
+
 
 /*================================================================================================================
 General Purpose Styles
@@ -2118,3 +2119,86 @@ Rob Requested the position of the edit link be moved.
   font-size: 1.2em;
   z-index: 9999;
 }
+
+/*================================================================================================================
+Collapsible Button
+  ================================================================================================================*/
+.collapsible-button {
+  cursor: pointer;
+  position: relative;
+  border-bottom: 1px solid var(--primary-color);
+  padding: 10px 0;
+}
+
+.collapsible-button:hover {
+
+  transition: border-left 0.3s ease;
+  border-left: 2px solid var(--primary-color);
+  padding-left: 10px;
+}
+
+.collapsible-button::before {
+  content: '+ ';
+  /* font-size: 10px; */
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-right: 10px;
+  vertical-align: middle;
+  border-right: 1px solid var(--primary-color);
+  /* position: absolute; */
+  /* left: 10px; */
+  transition: transform 0.3s ease;
+}
+
+.collapsible-button.exposed::before {
+  content: '- ';
+  transform: rotate(180deg);
+  /* background-color: var(--primary-color); */
+}
+
+.collapsible-button.exposed {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+/* 
+.collapsible-button {
+  cursor: pointer;
+  position: relative;
+}
+
+h2.collapsible-button,
+h3.collapsible-button {
+  margin: 0 !important;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.collapsible-area:nth-child(odd) {
+  background-color: var(--odd-tile-bg-color);
+}
+
+.collapsible-area:nth-child(even) {
+  background-color: var(--even-tile-bg-color);
+}
+
+.collapsible-button::after {
+  content: '\25BC ';
+  font-size: 10px;
+  position: absolute;
+  right: 10px;
+  transition: transform 0.3s ease;
+}
+
+.collapsible-button.exposed::after {
+  content: '\25B2 ';
+
+  transform: rotate(180deg);
+}
+
+.collapsible-content {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-top: none;
+  background-color: var(--white);
+} */
