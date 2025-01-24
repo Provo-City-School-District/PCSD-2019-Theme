@@ -1532,8 +1532,6 @@ Footer
   margin-left: 5px;
 }
 
-
-
 /*
 ================================================================================================================
 Directory styles
@@ -1913,7 +1911,6 @@ Gallery Page template styles
 low height viewport
 ================================================================================================================
 */
-/* @media (max-height: 720px) and (max-width: 600px){ */
 @media (max-height: 720px) {
   #contentArea {
     position: static;
@@ -1931,7 +1928,6 @@ low height viewport
     position: static;
     clear: both;
     padding-top: 5px;
-    /* height: auto; */
   }
 }
 
@@ -2030,9 +2026,6 @@ blockquote p {
   display: inline;
   font-style: italic;
 }
-
-
-
 
 /*
 =====================================================
@@ -2139,66 +2132,20 @@ Collapsible Button
 
 .collapsible-button::before {
   content: '+ ';
-  /* font-size: 10px; */
   padding-left: 10px;
   padding-right: 10px;
   margin-right: 10px;
   vertical-align: middle;
   border-right: 1px solid var(--primary-color);
-  /* position: absolute; */
-  /* left: 10px; */
   transition: transform 0.3s ease;
 }
 
 .collapsible-button.exposed::before {
   content: '- ';
   transform: rotate(180deg);
-  /* background-color: var(--primary-color); */
 }
 
 .collapsible-button.exposed {
   background-color: var(--primary-color);
   color: var(--secondary-color);
 }
-
-/* 
-.collapsible-button {
-  cursor: pointer;
-  position: relative;
-}
-
-h2.collapsible-button,
-h3.collapsible-button {
-  margin: 0 !important;
-  padding: 10px;
-  border-radius: 5px;
-}
-
-.collapsible-area:nth-child(odd) {
-  background-color: var(--odd-tile-bg-color);
-}
-
-.collapsible-area:nth-child(even) {
-  background-color: var(--even-tile-bg-color);
-}
-
-.collapsible-button::after {
-  content: '\25BC ';
-  font-size: 10px;
-  position: absolute;
-  right: 10px;
-  transition: transform 0.3s ease;
-}
-
-.collapsible-button.exposed::after {
-  content: '\25B2 ';
-
-  transform: rotate(180deg);
-}
-
-.collapsible-content {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-top: none;
-  background-color: var(--white);
-} */
