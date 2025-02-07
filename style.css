@@ -2151,3 +2151,7 @@ Collapsible Button
   background-color: var(--primary-color);
   color: var(--secondary-color);
 }
+
+.nested-collapsible-area {
+  margin-left: 3em;
+}
